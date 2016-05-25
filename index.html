@@ -586,13 +586,16 @@ function googleTranslateElementInit() {
              return Math.floor(Math.random() * (max - min)) + min;
         }
         
-        if(pInteger%3 === 0){
-	
-		createSegments();
+        //pInteger%3 === 0
+        
+        if(getRandomIndex(0,9) === 8){
+            
+                playFullSentence();
+		
 
             }else{
                 
-                playFullSentence();
+                createSegments();
                 
                 //if(pInteger%33 === 0){ 
                     
