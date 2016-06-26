@@ -14,35 +14,35 @@
                 {"filename": "l08full.mp3", "de": ".", "en": "Test."}
 	],
 	"help": [
-		{"filename": "l01h.mp3", "de": "Ich helfe", "en": "I help"},
-		{"filename": "l02h.mp3", "de": "Ich helfe", "en": "I help"},
-		{"filename": "l03h.mp3", "de": "Ich helfe", "en": "I help"},
-		{"filename": "l04h.mp3", "de": "Ich helfe", "en": "I help"},
-                {"filename": "l05h.mp3", "de": "Ich helfe", "en": "I help"},
-                {"filename": "l06h.mp3", "de": "Ich helfe", "en": "I help"},
-                {"filename": "l07h.mp3", "de": "Ich helfe", "en": "I help"},
-                {"filename": "l08h.mp3", "de": "Ich helfe", "en": "I help"}
+		{"filename": "l01h.mp3", "de": "Ich helfe ", "en": "I help"},
+		{"filename": "l02h.mp3", "de": "Ich helfe ", "en": "I help"},
+		{"filename": "l03h.mp3", "de": "Ich helfe ", "en": "I help"},
+		{"filename": "l04h.mp3", "de": "Ich helfe ", "en": "I help"},
+                {"filename": "l05h.mp3", "de": "Ich helfe ", "en": "I help"},
+                {"filename": "l06h.mp3", "de": "Ich helfe ", "en": "I help"},
+                {"filename": "l07h.mp3", "de": "Ich helfe ", "en": "I help"},
+                {"filename": "l08h.mp3", "de": "Ich helfe ", "en": "I help"}
 	],
 	"subject": [
-		{"filename": "l01s.mp3", "de": "weil ich", "en": "because I"},
-		{"filename": "l02s.mp3", "de": "weil ich", "en": "because I"},
-		{"filename": "l03s.mp3", "de": "weil ich", "en": "because I"},
-		{"filename": "l04s.mp3", "de": "weil ich", "en": "because I"},
-                {"filename": "l06s.mp3", "de": "weil ich", "en": "because I"},
-                {"filename": "l07s.mp3", "de": "weil nicht alles", "en": "because not everything"},
-                {"filename": "l08s.mp3", "de": "weil ich mich selbst", "en": "because I/myself"},                
-                {"filename": "l14s.mp3", "de": "weil ich", "en": "because I"}
+		{"filename": "l01s.mp3", "de": "weil ich ", "en": "because I"},
+		{"filename": "l02s.mp3", "de": "weil ich ", "en": "because I"},
+		{"filename": "l03s.mp3", "de": "weil ich ", "en": "because I"},
+		{"filename": "l04s.mp3", "de": "weil ich ", "en": "because I"},
+                {"filename": "l06s.mp3", "de": "weil ich ", "en": "because I"},
+                {"filename": "l07s.mp3", "de": "weil nicht alles ", "en": "because not everything"},
+                {"filename": "l08s.mp3", "de": "weil ich mich selbst ", "en": "because I/myself"},                
+                {"filename": "l14s.mp3", "de": "weil ich ", "en": "because I"}
         ],
 	"object": [		
-		{"filename": "l02o.mp3", "de": "ein lebendiger Vertreter meines Landes", "en": ""},
-                {"filename": "l03o.mp3", "de": "ein Brückenbauer", "en": ""},
-                {"filename": "l04o.mp3", "de": "die Gesellschaft", "en": ""},
-                {"filename": "l05o.mp3", "de": "wie anders wir hier", "en": ""},
-                {"filename": "l06o.mp3", "de": "von den Flüchtlingen", "en": ""},
-                {"filename": "l07o.mp3", "de": "vom Staat", "en": ""},
-                {"filename": "l08o.mp3", "de": "damit", "en": ""},
-                {"filename": "l12o.mp3", "de": "den Flüchtlingen", "en": ""},
-                {"filename": "l14o.mp3", "de": "ein Vorbild", "en": ""}
+		{"filename": "l02o.mp3", "de": "ein lebendiger Vertreter meines Landes ", "en": ""},
+                {"filename": "l03o.mp3", "de": "ein Brückenbauer ", "en": ""},
+                {"filename": "l04o.mp3", "de": "die Gesellschaft ", "en": ""},
+                {"filename": "l05o.mp3", "de": "wie anders wir hier ", "en": ""},
+                {"filename": "l06o.mp3", "de": "von den Flüchtlingen ", "en": ""},
+                {"filename": "l07o.mp3", "de": "vom Staat ", "en": ""},
+                {"filename": "l08o.mp3", "de": "damit ", "en": ""},
+                {"filename": "l12o.mp3", "de": "den Flüchtlingen ", "en": ""},
+                {"filename": "l14o.mp3", "de": "ein Vorbild ", "en": ""}
 	],
 	"verb": [
 		{"filename": "l01v.mp3", "de": "informiert über das Geschehen sein will", "en": ""},
