@@ -14,28 +14,28 @@
                 {"filename": "u08full.mp3", "de": ".", "en": "Test."}
 	],
 	"help": [
-		{"filename": "u01h.mp3", "de": "Ich helfe ", "en": "I help"},
-		{"filename": "u02h.mp3", "de": "Ich helfe ", "en": "I help"},
-		{"filename": "u03h.mp3", "de": "Ich helfe ", "en": "I help"},
-		{"filename": "u04h.mp3", "de": "Ich helfe ", "en": "I help"},
-                {"filename": "u05h.mp3", "de": "Ich helfe ", "en": "I help"},
-                {"filename": "u06h.mp3", "de": "Ich helfe ", "en": "I help"},
-                {"filename": "u07h.mp3", "de": "Ich helfe ", "en": "I help"},
-                {"filename": "u08h.mp3", "de": "Ich helfe ", "en": "I help"}
+		{"filename": "u01h.mp3", "de": "Ich helfe", "en": "I help"},
+		{"filename": "u02h.mp3", "de": "Ich helfe", "en": "I help"},
+		{"filename": "u03h.mp3", "de": "Ich helfe", "en": "I help"},
+		{"filename": "u04h.mp3", "de": "Ich helfe", "en": "I help"},
+                {"filename": "u05h.mp3", "de": "Ich helfe", "en": "I help"},
+                {"filename": "u06h.mp3", "de": "Ich helfe", "en": "I help"},
+                {"filename": "u07h.mp3", "de": "Ich helfe", "en": "I help"},
+                {"filename": "u08h.mp3", "de": "Ich helfe", "en": "I help"}
 	],
 	"subject": [
-		{"filename": "u01s.mp3", "de": "weil ich ", "en": ""},
-		{"filename": "u03s.mp3", "de": "weil ich ", "en": ""},
-                {"filename": "u08s.mp3", "de": "weil ich ", "en": ""}
+		{"filename": "u01s.mp3", "de": "weil ich", "en": ""},
+		{"filename": "u03s.mp3", "de": "weil ich", "en": ""},
+                {"filename": "u08s.mp3", "de": "weil ich", "en": ""}
         ],
 	"object": [
-		{"filename": "u01o.mp3", "de": "neue Erfahrungen ", "en": ""},
-		{"filename": "u02o.mp3", "de": "die Herausforderung für Europa, Deutschland ", "en": ""},
-                {"filename": "u03o.mp3", "de": "Zeit ", "en": ""},
-                {"filename": "u04o.mp3", "de": "guten Erfahrungen ", "en": ""},
-                {"filename": "u06o.mp3", "de": "von den Erfahrungen der Menschen ", "en": ""},
-                {"filename": "u07o.mp3", "de": "meine eigenen Ideen ", "en": ""},
-                {"filename": "u15o.mp3", "de": "den Senegalesen ", "en": ""}
+		{"filename": "u01o.mp3", "de": "neue Erfahrungen", "en": ""},
+		{"filename": "u02o.mp3", "de": "die Herausforderung für Europa, Deutschland", "en": ""},
+                {"filename": "u03o.mp3", "de": "Zeit", "en": ""},
+                {"filename": "u04o.mp3", "de": "guten Erfahrungen", "en": ""},
+                {"filename": "u06o.mp3", "de": "von den Erfahrungen der Menschen", "en": ""},
+                {"filename": "u07o.mp3", "de": "meine eigenen Ideen", "en": ""},
+                {"filename": "u15o.mp3", "de": "den Senegalesen", "en": ""}
 	],
 	"verb": [
 		{"filename": "u01v.mp3", "de": "machen wollte", "en": ""},
