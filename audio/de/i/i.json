@@ -14,32 +14,32 @@
                 {"filename": "i08full.mp3", "de": ".", "en": "Test."}
 	],
 	"help": [
-		{"filename": "i01h.mp3", "de": "Ich helfe", "en": "I help"},
-		{"filename": "i02h.mp3", "de": "Ich helfe", "en": "I help"},
-		{"filename": "i04h.mp3", "de": "Ich helfe", "en": "I help"},
-                {"filename": "i05h.mp3", "de": "Ich helfe", "en": "I help"},
-                {"filename": "i06h.mp3", "de": "Ich helfe", "en": "I help"},
-                {"filename": "i07h.mp3", "de": "Ich helfe", "en": "I help"},
-                {"filename": "i08h.mp3", "de": "Ich helfe", "en": "I help"}
+		{"filename": "i01h.mp3", "de": "Ich helfe ", "en": "I help"},
+		{"filename": "i02h.mp3", "de": "Ich helfe ", "en": "I help"},
+		{"filename": "i04h.mp3", "de": "Ich helfe ", "en": "I help"},
+                {"filename": "i05h.mp3", "de": "Ich helfe ", "en": "I help"},
+                {"filename": "i06h.mp3", "de": "Ich helfe ", "en": "I help"},
+                {"filename": "i07h.mp3", "de": "Ich helfe ", "en": "I help"},
+                {"filename": "i08h.mp3", "de": "Ich helfe ", "en": "I help"}
 	],
 	"subject": [
-		{"filename": "i01s.mp3", "de": "weil ich denke, dass", "en": ""},
-		{"filename": "i02s.mp3", "de": "weil ich", "en": ""},
-                {"filename": "i07s.mp3", "de": "weil ich nicht", "en": ""},
-                {"filename": "i08s.mp3", "de": "weil ich finde", "en": ""}
+		{"filename": "i01s.mp3", "de": "weil ich denke, dass ", "en": ""},
+		{"filename": "i02s.mp3", "de": "weil ich ", "en": ""},
+                {"filename": "i07s.mp3", "de": "weil ich nicht ", "en": ""},
+                {"filename": "i08s.mp3", "de": "weil ich finde ", "en": ""}
         ],
 	"object": [
-		{"filename": "i01o.mp3", "de": "dieser besonderen Situation im Moment", "en": ""},
-		{"filename": "i02o.mp3", "de": "eventuell mal selbst in einer Lage bin", "en": ""},
-                {"filename": "i03o.mp3", "de": "die Zeit", "en": ""},
-                {"filename": "i04o.mp3", "de": "fremden Menschen und Kulturen", "en": ""},
-                {"filename": "i05o.mp3", "de": "hilfe der Bevölkerung", "en": ""},
-                {"filename": "i06o.mp3", "de": "auch von den Flüchtlingen", "en": ""},
-                {"filename": "i07o.mp3", "de": "meine Zeit", "en": "my time"},
-                {"filename": "i15o.mp3", "de": "der Meinung", "en": ""},
-                {"filename": "i21o.mp3", "de": "dieses Problem", "en": ""},
-                {"filename": "i25o.mp3", "de": "Integration", "en": ""},                
-                {"filename": "i11o.mp3", "de": "Regierung und Verwaltung", "en": ""}
+		{"filename": "i01o.mp3", "de": "dieser besonderen Situation im Moment ", "en": ""},
+		{"filename": "i02o.mp3", "de": "eventuell mal selbst in einer Lage bin ", "en": ""},
+                {"filename": "i03o.mp3", "de": "die Zeit ", "en": ""},
+                {"filename": "i04o.mp3", "de": "fremden Menschen und Kulturen ", "en": ""},
+                {"filename": "i05o.mp3", "de": "hilfe der Bevölkerung ", "en": ""},
+                {"filename": "i06o.mp3", "de": "auch von den Flüchtlingen ", "en": ""},
+                {"filename": "i07o.mp3", "de": "meine Zeit ", "en": "my time"},
+                {"filename": "i15o.mp3", "de": "der Meinung ", "en": ""},
+                {"filename": "i21o.mp3", "de": "dieses Problem ", "en": ""},
+                {"filename": "i25o.mp3", "de": "Integration ", "en": ""},                
+                {"filename": "i11o.mp3", "de": "Regierung und Verwaltung ", "en": ""}
 	],
 	"verb": [
 		{"filename": "i01v.mp3", "de": "die Bevölkerung gefragt ist", "en": ""},
