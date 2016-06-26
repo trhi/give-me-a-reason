@@ -14,32 +14,32 @@
                 {"filename": "g08full.mp3", "de": ".", "en": "The sentence."}
 	],
 	"help": [
-		{"filename": "g01h.mp3", "de": "Ich helfe", "en": "I help"},
-		{"filename": "g02h.mp3", "de": "Ich helfe", "en": "I help"},
-		{"filename": "g03h.mp3", "de": "Ich helfe", "en": "I help"},
-		{"filename": "g04h.mp3", "de": "Ich helfe", "en": "I help"},
-                {"filename": "g05h.mp3", "de": "Ich helfe", "en": "I help"},
-                {"filename": "g06h.mp3", "de": "Ich helfe", "en": "I help"},
-                {"filename": "g07h.mp3", "de": "Ich helfe", "en": "I help"},
-                {"filename": "g08h.mp3", "de": "Ich helfe", "en": "I help"}
+		{"filename": "g01h.mp3", "de": "Ich helfe ", "en": "I help"},
+		{"filename": "g02h.mp3", "de": "Ich helfe ", "en": "I help"},
+		{"filename": "g03h.mp3", "de": "Ich helfe ", "en": "I help"},
+		{"filename": "g04h.mp3", "de": "Ich helfe ", "en": "I help"},
+                {"filename": "g05h.mp3", "de": "Ich helfe ", "en": "I help"},
+                {"filename": "g06h.mp3", "de": "Ich helfe ", "en": "I help"},
+                {"filename": "g07h.mp3", "de": "Ich helfe ", "en": "I help"},
+                {"filename": "g08h.mp3", "de": "Ich helfe ", "en": "I help"}
 	],
 	"subject": [
-		{"filename": "g01s.mp3", "de": "weil es", "en": "because it"},
-		{"filename": "g02s.mp3", "de": "weil ich", "en": "because I"},
-		{"filename": "g03s.mp3", "de": "weil ich", "en": "because I"},
-		{"filename": "g04s.mp3", "de": "weil ich nicht", "en": "because I don't"},
-                {"filename": "g05s.mp3", "de": "weil ich nicht", "en": "because I don't"},
-                {"filename": "g06s.mp3", "de": "weil es", "en": "because it"},
-                {"filename": "g07s.mp3", "de": "weil ich", "en": "because I"},
-                {"filename": "g08s.mp3", "de": "weil ich", "en": "because I"}
+		{"filename": "g01s.mp3", "de": "weil es ", "en": "because it"},
+		{"filename": "g02s.mp3", "de": "weil ich ", "en": "because I"},
+		{"filename": "g03s.mp3", "de": "weil ich ", "en": "because I"},
+		{"filename": "g04s.mp3", "de": "weil ich nicht ", "en": "because I don't"},
+                {"filename": "g05s.mp3", "de": "weil ich nicht ", "en": "because I don't"},
+                {"filename": "g06s.mp3", "de": "weil es ", "en": "because it"},
+                {"filename": "g07s.mp3", "de": "weil ich ", "en": "because I"},
+                {"filename": "g08s.mp3", "de": "weil ich ", "en": "because I"}
         ],
 	"object": [
-		{"filename": "g01o.mp3", "de": "mir", "en": "me"},
-		{"filename": "g02o.mp3", "de": "Augen", "en": "eyes"},
-                {"filename": "g03o.mp3", "de": "dass Hilfe", "en": "that help"},
-                {"filename": "g04o.mp3", "de": "jemand in der Not", "en": "somebody in need"},
-                {"filename": "g06o.mp3", "de": "mein Denken", "en": "my thinking"},
-                {"filename": "g07o.mp3", "de": "lieber unter Menschen", "en": "preferably amongst people"}
+		{"filename": "g01o.mp3", "de": "mir ", "en": "me"},
+		{"filename": "g02o.mp3", "de": "Augen ", "en": "eyes"},
+                {"filename": "g03o.mp3", "de": "dass Hilfe ", "en": "that help"},
+                {"filename": "g04o.mp3", "de": "jemand in der Not ", "en": "somebody in need"},
+                {"filename": "g06o.mp3", "de": "mein Denken ", "en": "my thinking"},
+                {"filename": "g07o.mp3", "de": "lieber unter Menschen ", "en": "preferably amongst people"}
 	],
 	"verb": [
 		{"filename": "g01v.mp3", "de": "mir hilft", "en": "test"},
