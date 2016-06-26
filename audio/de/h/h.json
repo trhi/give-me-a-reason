@@ -12,25 +12,25 @@
 		{"filename": "h06full.mp3", "de": ".", "en": "The sentence."}		
 	],
 	"help": [
-		{"filename": "h01h.mp3", "de": "Ich helfe", "en": "I help"},
-		{"filename": "h02h.mp3", "de": "Ich helfe", "en": "I help"},
-		{"filename": "h03h.mp3", "de": "Ich helfe", "en": "I help"},
-		{"filename": "h04h.mp3", "de": "Ich helfe", "en": "I help"},
-                {"filename": "h05h.mp3", "de": "Ich helfe", "en": "I help"},
-                {"filename": "h06h.mp3", "de": "Ich helfe", "en": "I help"},
-                {"filename": "h99h.mp3", "de": "Ich helfe", "en": "I help"}
+		{"filename": "h01h.mp3", "de": "Ich helfe ", "en": "I help"},
+		{"filename": "h02h.mp3", "de": "Ich helfe ", "en": "I help"},
+		{"filename": "h03h.mp3", "de": "Ich helfe ", "en": "I help"},
+		{"filename": "h04h.mp3", "de": "Ich helfe ", "en": "I help"},
+                {"filename": "h05h.mp3", "de": "Ich helfe ", "en": "I help"},
+                {"filename": "h06h.mp3", "de": "Ich helfe ", "en": "I help"},
+                {"filename": "h99h.mp3", "de": "Ich helfe ", "en": "I help"}
 	],
 	"subject": [
-		{"filename": "h01s.mp3", "de": "weil ich", "en": "because I"},
-		{"filename": "h02s.mp3", "de": "weil die Menschen", "en": "because it"},
-		{"filename": "h03s.mp3", "de": "weil diese Flüchtlinge, die hier bleiben", "en": "because these migrants that are going to stay here"},
-		{"filename": "h04s.mp3", "de": "weil ich den Flüchtlingen", "en": "because i want the refugees to"},
-                {"filename": "h05s.mp3", "de": "weil ich", "en": "because I"},
-                {"filename": "h06s.mp3", "de": "weil uns", "en": "because we/us"}
+		{"filename": "h01s.mp3", "de": "weil ich ", "en": "because I"},
+		{"filename": "h02s.mp3", "de": "weil die Menschen ", "en": "because it"},
+		{"filename": "h03s.mp3", "de": "weil diese Flüchtlinge, die hier bleiben ", "en": "because these migrants that are going to stay here"},
+		{"filename": "h04s.mp3", "de": "weil ich den Flüchtlingen ", "en": "because i want the refugees to"},
+                {"filename": "h05s.mp3", "de": "weil ich ", "en": "because I"},
+                {"filename": "h06s.mp3", "de": "weil uns ", "en": "because we/us"}
         ],
 	"object": [
-		{"filename": "h03o.mp3", "de": "unser Leben", "en": "our life"},
-		{"filename": "h04o.mp3", "de": "auch unsere Umgebung", "en": ""}
+		{"filename": "h03o.mp3", "de": "unser Leben ", "en": "our life"},
+		{"filename": "h04o.mp3", "de": "auch unsere Umgebung ", "en": ""}
 	],
 	"verb": [
 		{"filename": "h01v.mp3", "de": "helfen will", "en": "want to help"},
