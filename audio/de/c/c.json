@@ -14,33 +14,33 @@
                 {"filename": "c08full.mp3", "de": ".", "en": "Test."}
 	],
 	"help": [
-		{"filename": "c02h.mp3", "de": "Ich helfe", "en": "I help"},
-		{"filename": "c03h.mp3", "de": "Ich helfe", "en": "I help"},
-		{"filename": "c04h.mp3", "de": "Ich helfe", "en": "I help"},
-                {"filename": "c05h.mp3", "de": "Ich helfe", "en": "I help"},
-                {"filename": "c06h.mp3", "de": "Ich helfe", "en": "I help"},
-                {"filename": "c07h.mp3", "de": "Ich helfe", "en": "I help"},
-                {"filename": "c08h.mp3", "de": "Ich helfe", "en": "I help"}
+		{"filename": "c02h.mp3", "de": "Ich helfe ", "en": "I help"},
+		{"filename": "c03h.mp3", "de": "Ich helfe ", "en": "I help"},
+		{"filename": "c04h.mp3", "de": "Ich helfe ", "en": "I help"},
+                {"filename": "c05h.mp3", "de": "Ich helfe ", "en": "I help"},
+                {"filename": "c06h.mp3", "de": "Ich helfe ", "en": "I help"},
+                {"filename": "c07h.mp3", "de": "Ich helfe ", "en": "I help"},
+                {"filename": "c08h.mp3", "de": "Ich helfe ", "en": "I help"}
 	],
 	"subject": [
-		{"filename": "c01s.mp3", "de": "weil Menschenrechte", "en": ""},
-		{"filename": "c02s.mp3", "de": "weil ich", "en": ""},
-		{"filename": "c03s.mp3", "de": "weil eine Regierung", "en": ""},
-		{"filename": "c04s.mp3", "de": "weil es", "en": ""},
-                {"filename": "c05s.mp3", "de": "weil ich", "en": ""},
-                {"filename": "c06s.mp3", "de": "weil Deutschland", "en": ""},
-                {"filename": "c07s.mp3", "de": "weil die EU", "en": ""},
-                {"filename": "c08s.mp3", "de": "weil es mir", "en": ""}
+		{"filename": "c01s.mp3", "de": "weil Menschenrechte ", "en": ""},
+		{"filename": "c02s.mp3", "de": "weil ich ", "en": ""},
+		{"filename": "c03s.mp3", "de": "weil eine Regierung ", "en": ""},
+		{"filename": "c04s.mp3", "de": "weil es ", "en": ""},
+                {"filename": "c05s.mp3", "de": "weil ich ", "en": ""},
+                {"filename": "c06s.mp3", "de": "weil Deutschland ", "en": ""},
+                {"filename": "c07s.mp3", "de": "weil die EU ", "en": ""},
+                {"filename": "c08s.mp3", "de": "weil es mir ", "en": ""}
         ],
 	"object": [
-		{"filename": "c02o.mp3", "de": "die Gegenwart", "en": ""},
-                {"filename": "c04o.mp3", "de": "andere Leute", "en": ""},
-                {"filename": "c05o.mp3", "de": "unsere Europäischen Werten", "en": ""},
-                {"filename": "c06o.mp3", "de": "cool", "en": ""},
-                {"filename": "c08o.mp3", "de": "andere Leute", "en": ""},
-                {"filename": "c12o.mp3", "de": "die Gegenwart und auch die Zukunft", "en": ""},
-                {"filename": "c14o.mp3", "de": "die Flüchtlinge", "en": ""},
-                {"filename": "c18o.mp3", "de": "etwas positives", "en": ""}
+		{"filename": "c02o.mp3", "de": "die Gegenwart ", "en": ""},
+                {"filename": "c04o.mp3", "de": "andere Leute ", "en": ""},
+                {"filename": "c05o.mp3", "de": "unsere Europäischen Werten ", "en": ""},
+                {"filename": "c06o.mp3", "de": "cool ", "en": ""},
+                {"filename": "c08o.mp3", "de": "andere Leute ", "en": ""},
+                {"filename": "c12o.mp3", "de": "die Gegenwart und auch die Zukunft ", "en": ""},
+                {"filename": "c14o.mp3", "de": "die Flüchtlinge ", "en": ""},
+                {"filename": "c18o.mp3", "de": "etwas positives ", "en": ""}
 	],
 	"verb": [
 		{"filename": "c01v.mp3", "de": "auch umgesetzt werden mussen", "en": ""},
