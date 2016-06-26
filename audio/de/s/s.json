@@ -14,32 +14,32 @@
                 {"filename": "s08full.mp3", "de": ".", "en": "Test."}
 	],
 	"help": [
-		{"filename": "s01h.mp3", "de": "Ich helfe", "en": "I help"},
-		{"filename": "s02h.mp3", "de": "Ich helfe", "en": "I help"},
-		{"filename": "s03h.mp3", "de": "Ich helfe", "en": "I help"},
-		{"filename": "s04h.mp3", "de": "Ich helfe", "en": "I help"},
-                {"filename": "s05h.mp3", "de": "Ich helfe", "en": "I help"},
-                {"filename": "s06h.mp3", "de": "Ich helfe", "en": "I help"},
-                {"filename": "s07h.mp3", "de": "Ich helfe", "en": "I help"},
-                {"filename": "s08h.mp3", "de": "Ich helfe", "en": "I help"},
-                {"filename": "s09h.mp3", "de": "Ich helfe", "en": "I help"},
-                {"filename": "s99h.mp3", "de": "Ich helfe", "en": "I help"}
+		{"filename": "s01h.mp3", "de": "Ich helfe ", "en": "I help"},
+		{"filename": "s02h.mp3", "de": "Ich helfe ", "en": "I help"},
+		{"filename": "s03h.mp3", "de": "Ich helfe ", "en": "I help"},
+		{"filename": "s04h.mp3", "de": "Ich helfe ", "en": "I help"},
+                {"filename": "s05h.mp3", "de": "Ich helfe ", "en": "I help"},
+                {"filename": "s06h.mp3", "de": "Ich helfe ", "en": "I help"},
+                {"filename": "s07h.mp3", "de": "Ich helfe ", "en": "I help"},
+                {"filename": "s08h.mp3", "de": "Ich helfe ", "en": "I help"},
+                {"filename": "s09h.mp3", "de": "Ich helfe ", "en": "I help"},
+                {"filename": "s99h.mp3", "de": "Ich helfe ", "en": "I help"}
 	],
 	"subject": [
-		{"filename": "s01s.mp3", "de": "weil helfen", "en": ""},
-		{"filename": "s02s.mp3", "de": "weil helfen", "en": ""},
-		{"filename": "s03s.mp3", "de": "weil ich", "en": ""},
-		{"filename": "s04s.mp3", "de": "weil Geben und Nehmen", "en": ""},
-                {"filename": "s05s.mp3", "de": "weil es", "en": ""},
-                {"filename": "s06s.mp3", "de": "weil es", "en": ""},
-                {"filename": "s08s.mp3", "de": "weil gegenseitige Hilfe", "en": ""}
+		{"filename": "s01s.mp3", "de": "weil helfen ", "en": ""},
+		{"filename": "s02s.mp3", "de": "weil helfen ", "en": ""},
+		{"filename": "s03s.mp3", "de": "weil ich ", "en": ""},
+		{"filename": "s04s.mp3", "de": "weil Geben und Nehmen ", "en": ""},
+                {"filename": "s05s.mp3", "de": "weil es ", "en": ""},
+                {"filename": "s06s.mp3", "de": "weil es ", "en": ""},
+                {"filename": "s08s.mp3", "de": "weil gegenseitige Hilfe ", "en": ""}
         ],
 	"object": [
-		{"filename": "s01o.mp3", "de": "zu meinem Wesen", "en": ""},
-		{"filename": "s02o.mp3", "de": "zu meinem Leben", "en": ""},
-                {"filename": "s05o.mp3", "de": "Sinn", "en": ""},
-                {"filename": "s07o.mp3", "de": "meine eigene Sichtweise", "en": ""},
-                {"filename": "s08o.mp3", "de": "die Basis der menschlichen Existenz", "en": ""}
+		{"filename": "s01o.mp3", "de": "zu meinem Wesen ", "en": ""},
+		{"filename": "s02o.mp3", "de": "zu meinem Leben ", "en": ""},
+                {"filename": "s05o.mp3", "de": "Sinn ", "en": ""},
+                {"filename": "s07o.mp3", "de": "meine eigene Sichtweise ", "en": ""},
+                {"filename": "s08o.mp3", "de": "die Basis der menschlichen Existenz ", "en": ""}
 	],
 	"verb": [
 		{"filename": "s01v.mp3", "de": "gehört", "en": ""},
