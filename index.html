@@ -10,7 +10,7 @@
     <meta charset="utf-8"> 
     
    <!-- add metadata regarding keywords of project/site/button?
-   <meta name="keywords" content="refugees welcome, migrants, european union, germany, altruism, volunteers, i help because, helping others"> 
+   <meta name="keywords" content="refugees welcome, migrants, European union, Germany, altruism, volunteers, i help because, helping others, art"> 
     -->   
     
     <!-- define: to cater to needs of IE9 and IE8 
@@ -77,6 +77,13 @@ function googleTranslateElementInit() {
         <source src="audio/de/g/g00complete.mp3" type="audio/mp3">
     </audio>
       
+    <div id="google_translate_element"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'de', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        
+    
     <form>
         <button type="button" id="givemeareasonbutton" onclick="giveMeAReason()">      
         </button>
@@ -726,19 +733,24 @@ function googleTranslateElementInit() {
         function playSegments(){
             
             document.getElementById("help/").play();
+            //instead of creating new <font> elements by using .append
+            //add to innerHTML - how? appendChild?
             $(newsentence).append(voices[helpVoice].help[helpIndex].de);
             document.getElementById("help/").onended = function playSubject(){
                     
                 document.getElementById("subject/").play();
-                $(newsentence).append(" " + voices[subjectVoice].subject[subjectIndex].de);
+                $(newsentence).append("&nbsp;");
+                $(newsentence).append(voices[subjectVoice].subject[subjectIndex].de);
                 document.getElementById("subject/").onended = function playObject(){
                         
                     document.getElementById("object/").play();
-                    $(newsentence).append(" " + voices[objectVoice].object[objectIndex].de);
+                    $(newsentence).append("&nbsp;");
+                    $(newsentence).append(voices[objectVoice].object[objectIndex].de);
                     document.getElementById("object/").onended = function playVerb(){
                                 
                         document.getElementById("verb/").play();
-                        $(newsentence).append(" " + voices[verbVoice].verb[verbIndex].de);
+                        $(newsentence).append("&nbsp;");
+                        $(newsentence).append(voices[verbVoice].verb[verbIndex].de);
                         //this actually makes it wait until the verb has palyed:
                         //but I realised that it's better the faster you can click again
                         //document.getElementById("verb/").onended = function(){toggleButtonState();};
