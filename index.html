@@ -5,82 +5,38 @@
 
 <html lang="en-us">
   <head>
-      
-      <link rel="shortcut icon" 
-      type="image/x-icon" 
-      href="favicon.ico">
-      
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">    
     <!-- define character encoding: utf-8 -->
-    <meta charset="utf-8"> 
-    
+    <meta charset="utf-8">    
    <!-- add metadata regarding keywords of project/site/button?
    <meta name="keywords" content="refugees welcome, migrants, European union, Germany, altruism, volunteers, i help because, helping others, art"> 
-    -->   
-    
+    -->      
     <!-- define: to cater to needs of IE9 and IE8 
     and specify: google chrome frame should start if installed -->
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-
     <!-- define responsive design: w3.css -->
     <link rel="stylesheet" href="stylesheets/styles.css">
     <meta name="viewport" content="width=device-width">
-   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.js"></script>  
     <title>Give Me a Reason</title>
-
   </head>
-  <body>
-      <!--
-      toying around with a google translate element.. nah
-<div id="google_translate_element"></div><script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'de', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
-}
-</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    -->                               
-    <div id="audio"></div>
-      
-    <div id="google_translate_element"></div><script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'de', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-}
-</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-        
-    
-    <form>
-        <button type="button" id="givemeareasonbutton" class="loading">      
-        </button>
-    </form>
-       
-
-    <div id="sentences">           
-    </div>
-      
-      
-
-    <!-- cope with screen rotations and scaling-->
-    <script src="javascripts/scale.fix.js"></script>
-    
-    <script>
-
-        //in order to assign an id value for the p element per sentence created per session
-        //to begin with, it is 0. But the script will add 1 per sentence
-        //global because possibly used with Sentences[] in next dev stage
-        var pInteger;
-        
-        //global variable personsurl = .json file with list of all participating voices/datasets
-        //var personsurl = "audio/de/de-persons.json";
-        var language = "de";
-      
-        //a super essential function for toggling the givemeareason button state
-        function toggleButtonState(){
-                if (document.getElementById("givemeareasonbutton").disabled === false) {
-                     document.getElementById("givemeareasonbutton").disabled = true;
-                }else{
-                    document.getElementById("givemeareasonbutton").disabled = false;
-                }
+  <body>                           
+    <div id="audio"></div>   
+    <div id="google_translate_element"></div>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'de', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
         }
-                
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <form>
+        <button type="button" id="givemeareasonbutton" class="loading"> </button>
+    </form>
+    <div id="sentences"></div>
+    <!-- cope with screen rotations and scaling-->
+    <script src="javascripts/scale.fix.js"></script>   
+    <script>        
+        var language = "de";              
         //to show give me a reason once the voices have loaded
         function buttonReady(onclick){
             var button = $("#givemeareasonbutton").removeClass("loading").prop('disabled', false).on("click", function () {
@@ -90,10 +46,8 @@ function googleTranslateElementInit() {
                     });
             });
             console.log("Button is now ready.");
-
-
         }
-        
+          
         // This function takes an array of deferreds, and returns an array of their results.
         //  $.when(d1, d2).then(function(o1, o2) { ... })
         //  whenList([d1, d2]).then(function(os) { var o1 = os[0], o2 = os[1]; ... }) 
@@ -108,40 +62,30 @@ function googleTranslateElementInit() {
         
         //This function loads .json data for the given language and returns a deferred
         //resolving to an array of person objects
-        function loadData(language){
-            
+        function loadData(language){       
             //arguments[0]
-            var url = "audio/" + language + "/" + language + "-persons.json";
-            
+            var url = "audio/" + language + "/" + language + "-persons.json"; 
             var outerDeferred = $.get(url).then(function (data){
-                
                 console.log("Got data:" , data.persons);
-                
                 var deferredList = []; 
                 // $.each takes in a list and does function () {} for 
                 // each element of that list. A neater way to do for-loops
                 // where function takes (i=index, person=value at index i 
                 // in given list)
-                $.each(data.persons, function (i, person) {
-                    
-                    console.log("I eacherated this person: " + person.path);
-                    
+                $.each(data.persons, function (i, person) {              
+                    console.log("I eacherated this person: " + person.path);                   
                     // .then() always needs to have a return value!
                     var deferred = $.get(person.path).then(function (data){
                         console.log("I got all the data for " + person.name + 
                                 ", and this is their data: " , data);
-                        return data;
-                        
+                        return data;                        
                     });
-                    console.log("I have a deferred!!! It looks like this: " , deferred);
-                    
-                    deferredList.push(deferred);
-                
+                    console.log("I have a deferred!!! It looks like this: " , deferred);                  
+                    deferredList.push(deferred);                
                 });
                 console.log("deferredList looks like this, however, it is going " +
                         "to take a while longer til we can call each of our members" +
-                        "resolved! Oh, yes, the list: ", deferredList);
-                
+                        "resolved! Oh, yes, the list: ", deferredList);             
                 var deferredOfDefferds = whenList(deferredList).then(function(persons){
                     
                     console.log("These are the persons: " , persons);
@@ -162,122 +106,23 @@ function googleTranslateElementInit() {
                 "this seemingly endless chain of .then() dependencies/callbacks. " + 
                 "Meanwhile, here be our outer deferred: " , 
                 outerDeferred);
-            return outerDeferred;
-            
+            return outerDeferred;            
         }
 
-
-
-        $(function() {
-            
-            console.log( "ready!" );          
-            
+        $(function() {            
+            console.log( "ready!" );                      
             //state vs. configuration?
-            loadData(language).then(function(persons){                    
+            loadData(language).then(function(persons){                   
                 console.log("LoadData() was kind enough to give us these values: " ,  
-                    persons);
-                                
+                    persons);                               
                 buttonReady(function() {
                     return giveMeAReason(persons);
-                });
-                
-            }, function(error){
+                });               
+            }, 
+            function(error){
                 console.log("Oy! I found a rare species of the Er-er bird:" , error);    
-            });
-            
-            
-            
-         
-         
+            }); 
         });         
-   
-        /* * * *  
-         * 
-         *  
-         *  Begin Development Idea No I
-         *
-         *  A further development idea is:
-         *  to basically be able to click on the Sentences displayed
-         *  and have them be played back...
-         *  see details below:
-         * 
-         * 
-         * 
-         * 
-        //Sentences[] array
-        //plus
-        //a function which adds a onclick = function() to each <p>
-        //this way, whenever that <p> was clicked
-        //it would pass along its ID
-        //which would enable us to find the relevant data in the Sentences[] array
-        //and playback that sound! Once more. Without printing out a new <p> onto the screen.
-    
-        //declare sentencesArray as a global variable var sentencesArray = [];
-        //add the data per step to the array
-        //sentences is an array of sentence -objects
-        //declare object sentence
-        //sentence.pIndex starts at 0.
-        //sentence.help
-        //sentence.help.person
-        //sentence.help.help
-        //etc.
-        //The idea of having a Sentences[] array that saves all the ps. 
-        //Then you could click on a sentence you see on the screen
-        //And have the program replay that sentence..
-        //ie. reassign the values..
-        //would probably need to use closures
-        
-        
-        
-        //set the onclick event using jQuery
-        $("p").click(function() {
-            alert("Hello World");
-        });
-       
-        //or javascript?
-        document.getElementById(newsentence.id).onclick = function() {
-            $(newsentence.id).append(" <--- This was just clicked!!");
-        };
-    
-     //now follows a long list of remnants of code where I was trying
-                 //trying to get the system to give me reliable feedback about which p 
-                 //was being clicked..
-                 //to no avail..
-                 //abort mission (for today)
-                 //attempt at implementing assigning function onclick to each p element created
-                 //I will probably need to implement closures here..
-                 //document.getElementById(pIndex).onclick = function() {
-               //     $(pIndex).append(" <--- This was just clicked!!");
-                //};
-                
-               
-                newsentence.onclick = pClick(this);
-                
-                function pClick(element){         
-                    element.innerHTML = " <--- This was just clicked!!";
-                    //$(element).append(" <--- This was just clicked!!");
-                }
-                
-                function otherfunction(){
-                    
-                     $(this).append(" <--- This was just clicked!!");
-                };
-                        
-                
-                $(document).ready(function() {
-                    $(pIndex).click(clickP);
-                });
-                
-                function clickP(){
-                    $(this).append(" <--- This was just clicked!!");
-                };
-     
-     *
-     *  end of Development Idea I
-     *  
-     *
-     * * * */
-    
    
     // Returns a random integer between min (included) and max (excluded)
     // Using Math.round() will give you a non-uniform distribution!
@@ -291,9 +136,7 @@ function googleTranslateElementInit() {
         
     //return random element from array
     function selectRandom(array){
-
         return array[getRandomIndex(0, array.length)];
-
     }
 
     //takes in a person and a segment type
@@ -302,6 +145,7 @@ function googleTranslateElementInit() {
     //full path and text representation
     function makePlayablePerson(person, segmentType){
         var segment = selectRandom(person[segmentType]);
+
         return {
             src: person.path+segment.filename,
             text: segment[language]
@@ -309,12 +153,9 @@ function googleTranslateElementInit() {
     }
 
     function selectFullSentence(persons){
-
         var person =  selectRandom(persons);
 
         return [makePlayablePerson(person, "full")];
-
-
     }
 
 
@@ -322,14 +163,12 @@ function googleTranslateElementInit() {
     //and returns an array of objects that are playable by
     //the play function (full path and text)
     function selectSegments(persons){
-
         return [
             makePlayablePerson(selectRandom(persons), "help"), 
             makePlayablePerson(selectRandom(persons), "subject"), 
             makePlayablePerson(selectRandom(persons), "object"),
             makePlayablePerson(selectRandom(persons), "verb")
         ];
-
     }
 
     function select(persons) {
@@ -371,7 +210,6 @@ function googleTranslateElementInit() {
                         if(loading===0){
                             console.log("Got tem loaded:", audios);
                             playNext();
-
                         }
                     },
                     ended: function(event){
@@ -391,239 +229,12 @@ function googleTranslateElementInit() {
         });
         console.log("Waiting for preloads to canplaythrough")
         return deferred;
-
     }
 
     function giveMeAReason(persons) {
         var selections = select(persons);
         return play(selections);
     }
-
-
-
-    function giveMeAnOldReason() {
-            
-      //first, toggle button state: disable the button while audio is playing
-      toggleButtonState(); 
-      
-        //Create a new empty <p>/sentence to display on the screen
-        //later on, the voice.type.de data is appended to the p 
-        if(pInteger === undefined){
-            pInteger = 0;
-        }
-
-        var pIndex = pInteger.toString();
-        var newsentence = document.createElement("p");
-        var textNode = document.createTextNode("");
-        newsentence.appendChild(textNode);
-        newsentence.setAttribute("id", pIndex);
-        $("#sentencesdiv").prepend(newsentence);
-
-        //increment in preparation for next sentence
-        pInteger = pInteger + 1;
-             
-        //prepend the new p element to the already existing peas.
-        $("p").prepend(newsentence);
-        
-        //then remove the last sentence if there are already too many on the screen.
-        
-        //for choosing the voices and creating the segments
-        var counter = 0;
-
-        //for keeping track of who said what this iteration round
-        var helpVoice;
-        var subjectVoice;
-        var objectVoice;
-        var verbVoice;
-        
-        //for keeping track of which particular segment they said
-        var helpIndex;
-        var subjectIndex;
-        var objectIndex;
-        var verbIndex;
-
-        var segmentpath;
-        //for array of sentences.. couldn't this be
-        //that you have a helpPath, subjectPath, ObjectPath and verbPath.
-        //nope. You need the voice and help data.. because thats gonna be how
-        //you access the .de or .en data... gr
-        //ideally, you would then have
-        
-        
-        //pInteger%3 === 0
-        
-        if(getRandomIndex(0,9) === 8){
-            
-                playFullSentence();
-		
-
-            }else{
-                
-                createSegments();
-                
-                //if(pInteger%33 === 0){ 
-                    
-                //    playFullMantra();
-                    
-                //}else{
-                    
-                //}
-        }	
-
-        
-        
-        function playFullSentence(){
-            
-            var fullVoice;
-            var fullIndex;
-            var fullPath;
-            
-            fullVoice = getRandomIndex(0, voices.length);
-            fullIndex = getRandomIndex(0, voices[fullVoice].full.length);
-            fullPath = voices[fullVoice].path + voices[fullVoice].full[fullIndex].filename;
-                       
-            document.getElementById("test").src = fullPath;            
-            document.getElementById("test").play();            
-            //$("#test").src = fullPath;
-            //$("#test").play();
-            $(newsentence).append(voices[fullVoice].full[fullIndex].de);
-            document.getElementById("test").onended = function(){toggleButtonState();};
-           
-            
-        }
-        
-        function playFullMantra(){
-            
-            var result = $.grep(voices, function(e){ return e.name === "g";});
-
-            //var completePath = result[0].path + result[0].complete.filename;
-            
-            //fullVoice = getRandomIndex(0, voices.length);
-            //fullIndex = getRandomIndex(0, voices[fullVoice].full.length);
-            //fullPath = voices[fullVoice].path + voices[fullVoice].full[fullIndex].filename;
-                       
-            //document.getElementById("mantra").src = completePath;            
-            document.getElementById("mantra").play(); 
-            $(newsentence).append(result[0].complete.de);
-            document.getElementById("mantra").onended = function(){toggleButtonState();};
-            //$("#test").src = fullPath;
-            //$("#test").play();
-            
-            //document.getElementById("mantra").onended = function(){toggleButtonState();};
-            
-        }
-        
-        function createSegments(){
-        //chooses a voice to speak each segment
-        //chooses a segment from each voice
-        //mua-a-haa!
-        for(counter = 0; counter < 4; counter++){
-            
-            
-           
-            //chooses the voice and segment per utterance
-            chooseVoice();
-            chooseSegment();
-             
-             //perhaps implement later.. to add the info to the Sentences[] array
-             //pushToSentences();
-        
-        };
-        
-        //plays the segments as soon as they have been chosen and assigned
-        document.getElementById("verb/").oncanplaythrough = playSegments();
-        
-    }
-                    
-        function chooseVoice(){
- 
-            if(counter===0){
-                helpVoice = getRandomIndex(0, voices.length);
-            }
-            if(counter===1){
-                
-                subjectVoice = getRandomIndex(0, voices.length);
-            }
-            if(counter===2){
-                objectVoice = getRandomIndex(0, voices.length); 
-            }
-            if(counter===3){
-                verbVoice = getRandomIndex(0, voices.length);
-            }
-        
-        
-        }
-        
-        //well, this function not only chooses the segment,
-        //but also assigns the path+filname to the audio element.src
-        //AND preloads it!
-        function chooseSegment(){
-            
-            if(counter===0){
-                helpIndex = getRandomIndex(0, voices[helpVoice].help.length);
-                segmentpath = voices[helpVoice].path + voices[helpVoice].help[helpIndex].filename;
-                document.getElementById("help/").src = segmentpath;
-                document.getElementById("help/").preload = "auto"; 
-            }
-            if(counter===1){
-                subjectIndex = getRandomIndex(0, voices[subjectVoice].subject.length);
-                segmentpath = voices[subjectVoice].path + voices[subjectVoice].subject[subjectIndex].filename;
-                document.getElementById("subject/").src = segmentpath;
-                document.getElementById("subject/").preload = "auto";
-            }
-            if(counter===2){
-                objectIndex = getRandomIndex(0, voices[objectVoice].object.length);
-                segmentpath = voices[objectVoice].path + voices[objectVoice].object[objectIndex].filename;
-                document.getElementById("object/").src = segmentpath;
-                document.getElementById("object/").preload = "auto"; 
-            }
-            if(counter===3){
-                verbIndex = getRandomIndex(0, voices[verbVoice].verb.length);
-                segmentpath = voices[verbVoice].path + voices[verbVoice].verb[verbIndex].filename;
-                document.getElementById("verb/").src = segmentpath;
-                document.getElementById("verb/").preload = "auto"; 
-            }
-                          
-        }
-        
-        //this function plays all the segments..
-        function playSegments(){
-            
-            document.getElementById("help/").play();
-            //instead of creating new <font> elements by using .append
-            //add to innerHTML - how? appendChild?
-            $(newsentence).append(voices[helpVoice].help[helpIndex].de);
-            document.getElementById("help/").onended = function playSubject(){
-                    
-                    //var deferred = $.Deferred();
-                    //var audioElement = createElement("audio");
-                    //audioElement.onended = deferred.resolve;
-                    //audioElement.play();
-                    //return deferred;
-                document.getElementById("subject/").play();
-                $(newsentence).append("&nbsp;");
-                $(newsentence).append(voices[subjectVoice].subject[subjectIndex].de);
-                document.getElementById("subject/").onended = function playObject(){
-                        
-                    document.getElementById("object/").play();
-                    $(newsentence).append("&nbsp;");
-                    $(newsentence).append(voices[objectVoice].object[objectIndex].de);
-                    document.getElementById("object/").onended = function playVerb(){
-                                
-                        document.getElementById("verb/").play();
-                        $(newsentence).append("&nbsp;");
-                        $(newsentence).append(voices[verbVoice].verb[verbIndex].de);
-                        //this actually makes it wait until the verb has palyed:
-                        //but I realised that it's better the faster you can click again
-                        //document.getElementById("verb/").onended = function(){toggleButtonState();};
-                        toggleButtonState();        
-                    };
-                        
-                };                  
-            };
-        }
-      
-        }//end of givemeareason()
     
     </script>   
   </body>
