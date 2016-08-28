@@ -53,8 +53,7 @@ function googleTranslateElementInit() {
     </form>
        
 
-    <div id="sentencesdiv">
-        <p id="demo"></p>            
+    <div id="sentences">           
     </div>
       
       
@@ -351,10 +350,14 @@ function googleTranslateElementInit() {
         var deferred = $.Deferred();
         var loading = 0;
         var playing = 0;
+        var sentence = $("<p>");
+        $("#sentences").prepend(sentence);
 
         function playNext(){
-            audios[playing].play();
+            audios[playing].play();           
+            sentence.append(selections[playing].text + " ");
         }
+
         var audios = $.map(selections, function(segment) {
             loading++;
 
