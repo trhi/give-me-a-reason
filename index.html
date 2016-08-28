@@ -71,7 +71,7 @@ function googleTranslateElementInit() {
         
     
     <form>
-        <button type="button" id="givemeareasonbutton" class="loading" onclick="giveMeAReason()">      
+        <button type="button" id="givemeareasonbutton" class="loading">      
         </button>
     </form>
        
@@ -95,17 +95,7 @@ function googleTranslateElementInit() {
         //global variable personsurl = .json file with list of all participating voices/datasets
         //var personsurl = "audio/de/de-persons.json";
         var language = "de";
-        
-        //this is where the personsurl is then parsed into.
-        //A light array consisting of as many elements as there are voices.
       
-        
-        //the most important object of all!!
-        //This is where all the voices are pushed into..
-        //And the button then works heavily with this array afterwards..
-        //This monster of an array includes ALL the voices and ALL their data!
-        var voices = [];
-        
         //a super essential function for toggling the givemeareason button state
         function toggleButtonState(){
                 if (document.getElementById("givemeareasonbutton").disabled === false) {
@@ -113,26 +103,14 @@ function googleTranslateElementInit() {
                 }else{
                     document.getElementById("givemeareasonbutton").disabled = false;
                 }
-           }
-        
-        //toggleButtonState to off while loading
-        //Ideally, I would like to have a "Voices loading"
-        //type image show up where the button is..
-        //note, yay! Implemented the loading voices idea! (sort of..)
-        //sort of: because it currently displays it for a set amount of time
-        //instead of checking back to see whether the voices have actually loaded..
-        //toggleButtonState();        
-        //loadData uses loadPerons as a callbackfunction
-        //This is so that, once the persons array has been loaded /async
-        //the function calls the next step in the chain of events
-        //namely loadPersons
-            
-        
+        }
+                
         //to show give me a reason once the voices have loaded
-        function buttonReady(){
-            $("#givemeareasonbutton").removeClass("loading");        
-            $("#givemeareasonbutton").prop('disabled', false);
+        function buttonReady(onclick){
+            $("#givemeareasonbutton").removeClass("loading").prop('disabled', false).on("click", onclick);
             console.log("Button is now ready.");
+
+
         }
         
         // This function takes an array of deferreds, and returns an array of their results.
@@ -217,10 +195,10 @@ function googleTranslateElementInit() {
             loadData(language).then(function(persons){                    
                 console.log("LoadData() was kind enough to give us these values: " ,  
                     persons);
-                
-                voices = persons;
-                
-                buttonReady();
+                                
+                buttonReady(function() {
+                    giveMeAReason(persons);
+                });
                 
             }, function(error){
                 console.log("Oy! I found a rare species of the Er-er bird:" , error);    
@@ -230,48 +208,7 @@ function googleTranslateElementInit() {
             
          
          
-        });
-
-    
-    
-    
-    
-    
-    
-    
-    
-    /* * * *
-     * 
-     *     Begin testing functions
-     *     
-     *     test functions for displaying the contents of person or voices
-     * 
-     * 
-     * 
-     * 
-                
-                function showvoiceresults(voices){
-                    document.getElementById("demo").innerHTML = "The voices array has: " 
-                        + voices.toString() + "<br>"
-                        + voices[0].name + "<br>"
-                        + voices[0].path + "<br>"
-                        + voices[0].full[1].de;
-                }
-                
-                function showresults(person){
-                    
-                    document.getElementById("demo").innerHTML = "The person object has: " 
-                        + person.toString() + "<br>"
-                        + person.path + "<br>"
-                        + person.full[1].filename;
-
-                    }
-     *   
-     *   End of testing function
-     *
-     * * * */
-                
-                
+        });         
    
         /* * * *  
          * 
@@ -361,9 +298,63 @@ function googleTranslateElementInit() {
      * * * */
     
    
+    // Returns a random integer between min (included) and max (excluded)
+    // Using Math.round() will give you a non-uniform distribution!
+    //pass zero as min and pass array.length as max
+    //eg. 0 and 5
+    //will return: 0, 1, 2, 3 or 4.
+    //these are all valid indeces of the array
+    function getRandomIndex(min, max) {
+         return Math.floor(Math.random() * (max - min)) + min;
+    }
         
-          
-    function giveMeAReason(){
+    //return random element from array
+    function selectRandom(array){
+
+        return array[getRandomIndex(0, array.length)];
+
+    }
+
+    function selectFullSentence(persons){
+
+        var person =  selectRandom(persons);
+        return [selectRandom(person.full)];
+
+    }
+
+    function selectSegments(persons){
+
+        return [
+            selectRandom(selectRandom(persons).help), 
+            selectRandom(selectRandom(persons).subject), 
+            selectRandom(selectRandom(persons).object),
+            selectRandom(selectRandom(persons).verb)
+        ];
+
+    }
+
+    function select(persons) {
+        if (getRandomIndex(0,9) === 8) {
+            return selectFullSentence(persons);
+        } else {
+            return selectSegments(persons);
+        }
+    }
+
+    function play(selections) {
+        console.log("We have these:" , selections);
+    }
+
+    function giveMeAReason(persons) {
+
+        var selections = select(persons);
+        play(selections);
+
+    }
+
+
+
+    function giveMeAnOldReason() {
             
       //first, toggle button state: disable the button while audio is playing
       toggleButtonState(); 
@@ -373,6 +364,7 @@ function googleTranslateElementInit() {
         if(pInteger === undefined){
             pInteger = 0;
         }
+
         var pIndex = pInteger.toString();
         var newsentence = document.createElement("p");
         var textNode = document.createTextNode("");
@@ -410,15 +402,6 @@ function googleTranslateElementInit() {
         //you access the .de or .en data... gr
         //ideally, you would then have
         
-        // Returns a random integer between min (included) and max (excluded)
-        // Using Math.round() will give you a non-uniform distribution!
-        //pass zero as min and pass array.length as max
-        //eg. 0 and 5
-        //will return: 0, 1, 2, 3 or 4.
-        //these are all valid indeces of the array
-        function getRandomIndex(min, max) {
-             return Math.floor(Math.random() * (max - min)) + min;
-        }
         
         //pInteger%3 === 0
         
