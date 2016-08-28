@@ -38,30 +38,7 @@ function googleTranslateElementInit() {
 }
 </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     -->                               
-      
-    <audio id="help/">
-        <source src="audio/de/h/h99h.mp3" type="audio/mp3">     
-    </audio>
-      
-    <audio id="subject/">
-        <source src="audio/de/h/h01s.mp3" type="audio/mp3">      
-    </audio>
-       
-    <audio id="verb/">
-        <source src="audio/de/h/h01v.mp3" type="audio/mp3">      
-    </audio>
-       
-    <audio id="object/">
-        <source src="audio/de/h/h03o.mp3" type="audio/mp3">
-    </audio>
-      
-      <audio id="test">
-        <source src="audio/de/h/h03o.mp3" type="audio/mp3">
-    </audio>
-      
-      <audio id="mantra">
-        <source src="audio/de/g/g00complete.mp3" type="audio/mp3">
-    </audio>
+    <div id="audio"></div>
       
     <div id="google_translate_element"></div><script type="text/javascript">
 function googleTranslateElementInit() {
@@ -107,7 +84,12 @@ function googleTranslateElementInit() {
                 
         //to show give me a reason once the voices have loaded
         function buttonReady(onclick){
-            $("#givemeareasonbutton").removeClass("loading").prop('disabled', false).on("click", onclick);
+            var button = $("#givemeareasonbutton").removeClass("loading").prop('disabled', false).on("click", function () {
+                    button.attr('disabled', true);
+                    onclick().then(function () {
+                        button.attr('disabled', false);
+                    });
+            });
             console.log("Button is now ready.");
 
 
@@ -197,7 +179,7 @@ function googleTranslateElementInit() {
                     persons);
                                 
                 buttonReady(function() {
-                    giveMeAReason(persons);
+                    return giveMeAReason(persons);
                 });
                 
             }, function(error){
@@ -315,20 +297,38 @@ function googleTranslateElementInit() {
 
     }
 
+    //takes in a person and a segment type
+    //selects a random segment of that type 
+    //and then returns an obect with that segments'
+    //full path and text representation
+    function makePlayablePerson(person, segmentType){
+        var segment = selectRandom(person[segmentType]);
+        return {
+            src: person.path+segment.filename,
+            text: segment[language]
+        };
+    }
+
     function selectFullSentence(persons){
 
         var person =  selectRandom(persons);
-        return [selectRandom(person.full)];
+
+        return [makePlayablePerson(person, "full")];
+
 
     }
 
+
+    //takes in an array of persons (full list of all persons)
+    //and returns an array of objects that are playable by
+    //the play function (full path and text)
     function selectSegments(persons){
 
         return [
-            selectRandom(selectRandom(persons).help), 
-            selectRandom(selectRandom(persons).subject), 
-            selectRandom(selectRandom(persons).object),
-            selectRandom(selectRandom(persons).verb)
+            makePlayablePerson(selectRandom(persons), "help"), 
+            makePlayablePerson(selectRandom(persons), "subject"), 
+            makePlayablePerson(selectRandom(persons), "object"),
+            makePlayablePerson(selectRandom(persons), "verb")
         ];
 
     }
@@ -341,15 +341,59 @@ function googleTranslateElementInit() {
         }
     }
 
+    //the play function takes in an array of playable segments
+    //ie. [{src: "audio/de/a/a01h.mp3", text: "Ich helfe"}, {..}]
+    //and returns a deferred once they have all been played
     function play(selections) {
         console.log("We have these:" , selections);
+        var audioDiv = $("#audio");
+        audioDiv.empty();
+        var deferred = $.Deferred();
+        var loading = 0;
+        var playing = 0;
+
+        function playNext(){
+            audios[playing].play();
+        }
+        var audios = $.map(selections, function(segment) {
+            loading++;
+
+            var audio = $( "<audio></audio>", {
+                src: segment.src,
+                preload: "auto",
+                on: {
+                    canplaythrough: function(event){
+                        loading--;
+                        console.log("One more canplaythrough. Still waiting for:", loading);
+                        if(loading===0){
+                            console.log("Got tem loaded:", audios);
+                            playNext();
+
+                        }
+                    },
+                    ended: function(event){
+                        playing++;
+                        console.log("I have played", audio);
+                        if(playing<audios.length) {
+                            playNext();
+                        } else {
+                            console.log("I have played them all!");
+                            deferred.resolve();
+                        }
+                    }
+                }
+            });
+            audioDiv.append(audio);
+            return audio[0];
+        });
+        console.log("Waiting for preloads to canplaythrough")
+        return deferred;
+
     }
 
     function giveMeAReason(persons) {
-
         var selections = select(persons);
-        play(selections);
-
+        return play(selections);
     }
 
 
