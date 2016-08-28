@@ -159,10 +159,15 @@ function googleTranslateElementInit() {
                 console.log("Got data:" , data.persons);
                 
                 var deferredList = []; 
+                // $.each takes in a list and does function () {} for 
+                // each element of that list. A neater way to do for-loops
+                // where function takes (i=index, person=value at index i 
+                // in given list)
                 $.each(data.persons, function (i, person) {
                     
                     console.log("I eacherated this person: " + person.path);
                     
+                    // .then() always needs to have a return value!
                     var deferred = $.get(person.path).then(function (data){
                         console.log("I got all the data for " + person.name + 
                                 ", and this is their data: " , data);
