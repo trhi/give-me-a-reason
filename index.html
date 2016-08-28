@@ -193,8 +193,8 @@
         $("#sentences").prepend(sentence);
 
         function playNext(){
-            audios[playing].play();           
-            sentence.append(selections[playing].text + " ");
+            audios[playing].play();        
+            sentence.append(selections[playing].text).append(" ");
         }
 
         var audios = $.map(selections, function(segment) {
