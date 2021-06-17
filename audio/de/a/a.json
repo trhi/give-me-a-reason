@@ -38,13 +38,15 @@
                 {"filename": "a18o.mp3", "de": "anderen Menschen", "en": ""}
 	],
 	"verb": [
-		{"filename": "a01v.mp3", "de": "zeigen möchte, dass es auch anders geht", "en": ""},
+		{"filename": "a01v.mp3", "de": "erlebt habe", "en": ""},
 		{"filename": "a04v.mp3", "de": "nicht Verantwortung auf andere schiebe", "en": ""},
                 {"filename": "a05v.mp3", "de": "sehr früh registriert habe", "en": ""},
                 {"filename": "a06v.mp3", "de": "wir es uns nicht leisten können", "en": ""},
                 {"filename": "a07v.mp3", "de": "sein kann", "en": ""},
                 {"filename": "a08v.mp3", "de": "eine grosse Freude bereitet", "en": ""},
+								{"filename": "a11v.mp3", "de": "mehrfach erlebt habe", "en": ""},
                 {"filename": "a12v.mp3", "de": "geholfen habe und gemerkt habe, wie wichtig dass ist", "en": ""},
+								{"filename": "a13v.mp3", "de": "zeigen möchte", "en": ""},
                 {"filename": "a15v.mp3", "de": "wir sie integrieren müssen", "en": ""},
                 {"filename": "a18v.mp3", "de": "zu helfen", "en": ""},
                 {"filename": "a26v.mp3", "de": "im Umbruch ist", "en": ""}
