@@ -32,12 +32,16 @@
                 {"filename": "r08s.mp3", "de": "weil meine Kinder", "en": ""}
         ],
 	"object": [
-		{"filename": "r01o.mp3", "de": "gegen Ausländerfeindlichkeit", "en": ""},
+		{"filename": "r01o.mp3", "de": "Ausländerfeindlichkeit", "en": ""},
                 {"filename": "r03o.mp3", "de": "Spass", "en": ""},
                 {"filename": "r04o.mp3", "de": "absolut notwendig", "en": ""},
                 {"filename": "r05o.mp3", "de": "die Flüchtlinge", "en": ""},
                 {"filename": "r06o.mp3", "de": "Angst vor Rechtsradikalismus", "en": ""},
+								{"filename": "r07o.mp3", "de": "interessante Leute", "en": ""},
                 {"filename": "r08o.mp3", "de": "die Gesellschaft", "en": ""},
+								{"filename": "r10o.mp3", "de": "Zeichen", "en": ""},
+								{"filename": "r61o.mp3", "de": "Angst", "en": ""},
+								{"filename": "r62o.mp3", "de": "Rechtsradikalismus", "en": ""},
                 {"filename": "r88o.mp3", "de": "meine Kinder", "en": ""}
 	],
 	"verb": [
@@ -48,6 +52,7 @@
                 {"filename": "r05v.mp3", "de": "leid tun", "en": ""},
                 {"filename": "r06v.mp3", "de": "habe", "en": ""},
                 {"filename": "r07v.mp3", "de": "kennenlerne", "en": ""},
+								{"filename": "r08v.mp3", "de": "wichtig ist", "en": ""},
                 {"filename": "r88v.mp3", "de": "sehen sollen", "en": ""}
         ]
 }

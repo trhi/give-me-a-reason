@@ -39,7 +39,10 @@
                 {"filename": "m04o.mp3", "de": "natürlich", "en": ""},
                 {"filename": "m05o.mp3", "de": "der Mensch", "en": ""},
                 {"filename": "m06o.mp3", "de": "im Leben", "en": ""},
-                {"filename": "m08o.mp3", "de": "seine tiefen Herz", "en": ""}
+                {"filename": "m08o.mp3", "de": "seine tiefen Herz", "en": ""},
+								{"filename": "m80o.mp3", "de": "Herz", "en": ""},
+								{"filename": "m51o.mp3", "de": "ein Lachen", "en": ""}
+
 	],
 	"verb": [
 		{"filename": "m01v.mp3", "de": "weitergeben mag", "en": ""},
