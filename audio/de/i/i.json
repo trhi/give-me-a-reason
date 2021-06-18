@@ -30,29 +30,36 @@
         ],
 	"object": [
 		{"filename": "i01o.mp3", "de": "dieser besonderen Situation im Moment", "en": ""},
-		{"filename": "i02o.mp3", "de": "eventuell mal selbst in einer Lage bin", "en": ""},
+		{"filename": "i02o.mp3", "de": "einer Lage", "en": ""},
                 {"filename": "i03o.mp3", "de": "die Zeit", "en": ""},
                 {"filename": "i04o.mp3", "de": "fremden Menschen und Kulturen", "en": ""},
-                {"filename": "i05o.mp3", "de": "hilfe der Bevölkerung", "en": ""},
-                {"filename": "i06o.mp3", "de": "auch von den Flüchtlingen", "en": ""},
+                {"filename": "i05o.mp3", "de": "Hilfe der Bevölkerung", "en": ""},
+                {"filename": "i06o.mp3", "de": "den Flüchtlingen", "en": ""},
                 {"filename": "i07o.mp3", "de": "meine Zeit", "en": "my time"},
-                {"filename": "i15o.mp3", "de": "der Meinung", "en": ""},
-                {"filename": "i21o.mp3", "de": "dieses Problem", "en": ""},
-                {"filename": "i25o.mp3", "de": "Integration", "en": ""},                
-                {"filename": "i11o.mp3", "de": "Regierung und Verwaltung", "en": ""}
+								{"filename": "i08o.mp3", "de": "gutem Beispiel", "en": "good example"},
+                {"filename": "i50o.mp3", "de": "der Meinung", "en": "my opinion"},
+                {"filename": "i21o.mp3", "de": "dieses Problem", "en": "this problem"},
+                {"filename": "i51o.mp3", "de": "Integration", "en": "integration"},
+                {"filename": "i11o.mp3", "de": "Regierung und Verwaltung", "en": "the government and the executive"},
+								{"filename": "i10o.mp3", "de": "die Bevölkerung", "en": "the population"},
+								{"filename": "i12o.mp3", "de": "allein", "en": "alone"},
+								{"filename": "i70o.mp3", "de": "Geld", "en": "money"}
+
+
 	],
 	"verb": [
-		{"filename": "i01v.mp3", "de": "die Bevölkerung gefragt ist", "en": ""},
-		{"filename": "i02v.mp3", "de": "Hilfe brauche", "en": ""},
-		{"filename": "i03v.mp3", "de": "die Zeit nehmen kann", "en": ""},
-                {"filename": "i05v.mp3", "de": "gelingen kann", "en": ""},
-                {"filename": "i06v.mp3", "de": "lernen kann, nicht nur sie von mir", "en": ""},
-                {"filename": "i07v.mp3", "de": "spende ich so zu sagen meine Zeit", "en": ""},
-                {"filename": "i08v.mp3", "de": "gutem Beispiel vorangehen sollte", "en": ""},               
-                {"filename": "i13v.mp3", "de": "nehmen kann", "en": ""},
-                {"filename": "i16v.mp3", "de": "lernen kann", "en": ""},
-                {"filename": "i17v.mp3", "de": "Geld spenden kann", "en": ""},
-                {"filename": "i21v.mp3", "de": "allein nicht lösen können", "en": ""},
-                {"filename": "i27v.mp3", "de": "spenden", "en": ""}              
+		{"filename": "i01v.mp3", "de": "gefragt ist", "en": "asked for"},
+		{"filename": "i02v.mp3", "de": "Hilfe brauche", "en": "need help"},
+		{"filename": "i04v.mp3", "de": "bin", "en": "am"},
+                {"filename": "i05v.mp3", "de": "gelingen kann", "en": "can work out"},
+								{"filename": "i06v.mp3", "de": "lernen kann", "en": "can learn"},
+                {"filename": "i08v.mp3", "de": "vorangehen sollte", "en": "should advance"},
+                {"filename": "i13v.mp3", "de": "nehmen kann", "en": "can take"},
+                {"filename": "i21v.mp3", "de": "nicht lösen können", "en": "cannot solve"},
+                {"filename": "i27v.mp3", "de": "spenden", "en": "donate"},
+								{"filename": "i70v.mp3", "de": "nicht so viel verdiene", "en": "do not earn so much"},
+								{"filename": "i71v.mp3", "de": "spenden kann", "en": ""},
+								{"filename": "i72v.mp3", "de": "verdiene", "en": ""}
+
         ]
 }
