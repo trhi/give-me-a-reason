@@ -28,7 +28,6 @@
 		{"filename": "g02s.mp3", "de": "weil ich", "en": "because I"},
 		{"filename": "g03s.mp3", "de": "weil ich", "en": "because I"},
 		{"filename": "g04s.mp3", "de": "weil ich nicht", "en": "because I don't"},
-                {"filename": "g05s.mp3", "de": "weil ich nicht", "en": "because I don't"},
                 {"filename": "g06s.mp3", "de": "weil es", "en": "because it"},
                 {"filename": "g07s.mp3", "de": "weil ich", "en": "because I"},
                 {"filename": "g08s.mp3", "de": "weil ich", "en": "because I"}
@@ -39,18 +38,22 @@
                 {"filename": "g03o.mp3", "de": "dass Hilfe", "en": "that help"},
                 {"filename": "g04o.mp3", "de": "jemand in der Not", "en": "somebody in need"},
                 {"filename": "g06o.mp3", "de": "mein Denken", "en": "my thinking"},
-                {"filename": "g07o.mp3", "de": "lieber unter Menschen", "en": "preferably amongst people"}
+                {"filename": "g07o.mp3", "de": "lieber unter Menschen", "en": "preferably amongst people"},
+								{"filename": "g20o.mp3", "de": "die Bedürfnisse andere", "en": "the needs of others"}
+
 	],
 	"verb": [
-		{"filename": "g01v.mp3", "de": "mir hilft", "en": "test"},
-		{"filename": "g02v.mp3", "de": "für die Bedürfnisse andere habe", "en": "test"},
-		{"filename": "g03v.mp3", "de": "weiss", "en": "test"},
-		{"filename": "g04v.mp3", "de": "alleine gelassen wird", "en": "test"},
-                {"filename": "g05v.mp3", "de": "hilflos zusehen will", "en": "test"},
+		{"filename": "g01v.mp3", "de": "mir hilft", "en": "helps me"},
+		{"filename": "g02v.mp3", "de": "habe", "en": "have"},
+		{"filename": "g03v.mp3", "de": "weiss", "en": "know"},
+		{"filename": "g04v.mp3", "de": "alleine gelassen wird", "en": "left alone"},
+                {"filename": "g05v.mp3", "de": "nicht hilflos zusehen will", "en": "test"},
                 {"filename": "g06v.mp3", "de": "erweitert", "en": "test"},
-                {"filename": "g07v.mp3", "de": "als alleine bin", "en": "test"},
+                {"filename": "g07v.mp3", "de": "alleine bin", "en": "test"},
                 {"filename": "g08v.mp3", "de": "nicht wegschauen will", "en": "test"},
                 {"filename": "g33v.mp3", "de": "bitter nötig ist", "en": "test"},
-                {"filename": "g44v.mp3", "de": "will", "en": "test"}
+                {"filename": "g44v.mp3", "de": "will", "en": "test"},
+								{"filename": "g40v.mp3", "de": "nicht will", "en": "test"}
+
         ]
 }
