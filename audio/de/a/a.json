@@ -35,7 +35,6 @@
                 {"filename": "a07o.mp3", "de": "eine grosse Bereicherung", "en": ""},
 								{"filename": "a08o.mp3", "de": "eine grosse Freude", "en": ""},
                 {"filename": "a12o.mp3", "de": "der Integration in Deutschland", "en": ""},
-                {"filename": "a13o.mp3", "de": "der Faktor Sprache und das generelle Verhalten", "en": ""},
                 {"filename": "a15o.mp3", "de": "das Versagen der Politik", "en": ""},
                 {"filename": "a18o.mp3", "de": "anderen Menschen", "en": ""},
 								{"filename": "a30o.mp3", "de": "gern selbst", "en": ""},
@@ -48,7 +47,7 @@
 	"verb": [
 		{"filename": "a01v.mp3", "de": "erlebt habe", "en": ""},
 		{"filename": "a02v.mp3", "de": "gemerkt habe", "en": ""},
-		{"filename": "a04v.mp3", "de": "nicht Verantwortung auf andere schiebe", "en": ""},
+		{"filename": "a04v.mp3", "de": "auf andere schiebe", "en": ""},
                 {"filename": "a05v.mp3", "de": "sehr früh registriert habe", "en": ""},
                 {"filename": "a07v.mp3", "de": "sein kann", "en": ""},
 								{"filename": "a11v.mp3", "de": "mehrfach erlebt habe", "en": ""},

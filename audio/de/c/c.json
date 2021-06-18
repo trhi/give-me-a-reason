@@ -38,21 +38,20 @@
                 {"filename": "c04o.mp3", "de": "andere Leute", "en": ""},
                 {"filename": "c05o.mp3", "de": "unsere Europäischen Werten", "en": ""},
                 {"filename": "c08o.mp3", "de": "andere Leute", "en": ""},
-                {"filename": "c12o.mp3", "de": "die Gegenwart und auch die Zukunft", "en": ""},
                 {"filename": "c14o.mp3", "de": "die Flüchtlinge", "en": ""},
                 {"filename": "c18o.mp3", "de": "etwas positives", "en": ""},
 								{"filename": "c20o.mp3", "de": "die Zukunft", "en": ""},
 								{"filename": "c30o.mp3", "de": "nicht alles", "en": ""}
 	],
 	"verb": [
-		{"filename": "c01v.mp3", "de": "auch umgesetzt werden mussen", "en": ""},
 		{"filename": "c02v.mp3", "de": "mitgestalten möchte", "en": ""},
-		{"filename": "c03v.mp3", "de": "nicht alles alleine machen kann", "en": ""},
+		{"filename": "c03v.mp3", "de": "machen kann", "en": ""},
                 {"filename": "c05v.mp3", "de": "glauben", "en": ""},
                 {"filename": "c06v.mp3", "de": "ist", "en": ""},
                 {"filename": "c07v.mp3", "de": "ist", "en": ""},
                 {"filename": "c08v.mp3", "de": "machen kann", "en": ""},
-                {"filename": "c11v.mp3", "de": "nicht nur diskutiert werden mussen", "en": ""},
+                {"filename": "c11v.mp3", "de": "diskutiert werden mussen", "en": ""},
+								{"filename": "c12v.mp3", "de": "umgesetzt werden mussen", "en": ""},
                 {"filename": "c18v.mp3", "de": "gut geht", "en": ""}
         ]
 }

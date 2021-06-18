@@ -39,13 +39,14 @@
 	],
 	"verb": [
 		{"filename": "u01v.mp3", "de": "machen wollte", "en": ""},
-		{"filename": "u02v.mp3", "de": "persönlich erfahren und gestalten wollte", "en": ""},
+		{"filename": "u02v.mp3", "de": "gestalten wollte", "en": ""},
 		{"filename": "u30v.mp3", "de": "hatte", "en": ""},
 		{"filename": "u04v.mp3", "de": "anknüpfen konnte und wollte", "en": ""},
                 {"filename": "u05v.mp3", "de": "erweitern wollte", "en": ""},
                 {"filename": "u06v.mp3", "de": "lernen wollte", "en": ""},
                 {"filename": "u07v.mp3", "de": "weitergeben wollte", "en": ""},
                 {"filename": "u08v.mp3", "de": "wichtig finde", "en": ""},
-                {"filename": "u44v.mp3", "de": "und wollte", "en": ""}
+								{"filename": "u21v.mp3", "de": "erfahren", "en": ""},
+                {"filename": "u44v.mp3", "de": "wollte", "en": ""}
         ]
 }

@@ -44,7 +44,9 @@
                 {"filename": "k07o.mp3", "de": "notwendig", "en": ""},
                 {"filename": "k08o.mp3", "de": "alle", "en": ""},
                 {"filename": "k09o.mp3", "de": "in Zukunft", "en": ""},
+								{"filename": "k10o.mp3", "de": "Hilfe", "en": ""},
                 {"filename": "k11o.mp3", "de": "hier", "en": ""},
+								{"filename": "k12o.mp3", "de": "gut", "en": ""},
                 {"filename": "k13o.mp3", "de": "miteinander", "en": ""}
 	],
 	"verb": [
@@ -55,10 +57,10 @@
                 {"filename": "k06v.mp3", "de": "wachsen kann", "en": ""},
                 {"filename": "k08v.mp3", "de": "zusammengehören", "en": ""},
                 {"filename": "k09v.mp3", "de": "leben werden", "en": ""},
-                {"filename": "k11v.mp3", "de": "gut zurecht kommen müssen", "en": ""},
-                {"filename": "k12v.mp3", "de": "zugute kommen wird", "en": ""},
+                {"filename": "k11v.mp3", "de": "zurechtkommen müssen", "en": ""},
+                {"filename": "k12v.mp3", "de": "zugutekommen wird", "en": ""},
                 {"filename": "k13v.mp3", "de": "weiss", "en": ""},
-                {"filename": "k14v.mp3", "de": "hilfe braucht", "en": ""},
+                {"filename": "k14v.mp3", "de": "braucht", "en": ""},
                 {"filename": "k15v.mp3", "de": "anfühlt", "en": ""}
         ]
 }

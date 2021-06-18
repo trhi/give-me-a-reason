@@ -28,6 +28,7 @@
                 {"filename": "h06s.mp3", "de": "weil uns", "en": "because we/us"}
         ],
 	"object": [
+		{"filename": "h02o.mp3", "de": "hier", "en": "here"},
 		{"filename": "h03o.mp3", "de": "unser Leben", "en": "our life"},
 		{"filename": "h04o.mp3", "de": "unsere Umgebung", "en": ""},
 		{"filename": "h30o.mp3", "de": "diese Flüchtlinge", "en": ""},
@@ -36,7 +37,7 @@
 	],
 	"verb": [
 		{"filename": "h01v.mp3", "de": "helfen will", "en": "want to help"},
-		{"filename": "h02v.mp3", "de": "hier nicht auskennen", "en": "don't know this place"},
+		{"filename": "h02v.mp3", "de": "nicht auskennen", "en": "don't know this place"},
 		{"filename": "h03v.mp3", "de": "kennen lernen sollen", "en": "should get to know"},
                 {"filename": "h06v.mp3", "de": "1945 geholfen hat", "en": "helped in '45"},
                 {"filename": "h07v.mp3", "de": "geholfen hat", "en": "helped"},
