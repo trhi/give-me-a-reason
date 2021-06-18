@@ -29,26 +29,38 @@
 		{"filename": "a01o.mp3", "de": "das Problem des Fremdseins", "en": ""},
 		{"filename": "a02o.mp3", "de": "Fremden und Familienangehörigen", "en": ""},
                 {"filename": "a03o.mp3", "de": "viele Auslandsaufenthalte", "en": ""},
+								{"filename": "a04o.mp3", "de": "Verantwortung", "en": ""},
                 {"filename": "a05o.mp3", "de": "die Flüchtlinge", "en": ""},
+								{"filename": "a06o.mp3", "de": "nur die Rosinen", "en": ""},
                 {"filename": "a07o.mp3", "de": "eine grosse Bereicherung", "en": ""},
-                {"filename": "a12o.mp3", "de": "bei der Integration in Deutschland", "en": ""},
+								{"filename": "a08o.mp3", "de": "eine grosse Freude", "en": ""},
+                {"filename": "a12o.mp3", "de": "der Integration in Deutschland", "en": ""},
                 {"filename": "a13o.mp3", "de": "der Faktor Sprache und das generelle Verhalten", "en": ""},
                 {"filename": "a15o.mp3", "de": "das Versagen der Politik", "en": ""},
-                {"filename": "a17o.mp3", "de": "eine grosse Bereicherung für uns alle", "en": ""},
-                {"filename": "a18o.mp3", "de": "anderen Menschen", "en": ""}
+                {"filename": "a18o.mp3", "de": "anderen Menschen", "en": ""},
+								{"filename": "a30o.mp3", "de": "gern selbst", "en": ""},
+								{"filename": "a31o.mp3", "de": "der Faktor Sprache", "en": ""},
+								{"filename": "a32o.mp3", "de": "das generelle Verhalten", "en": ""},
+								{"filename": "a61o.mp3", "de": "unsere Welt", "en": ""},
+								{"filename": "a70o.mp3", "de": "uns alle", "en": ""}
+
 	],
 	"verb": [
 		{"filename": "a01v.mp3", "de": "erlebt habe", "en": ""},
+		{"filename": "a02v.mp3", "de": "gemerkt habe", "en": ""},
 		{"filename": "a04v.mp3", "de": "nicht Verantwortung auf andere schiebe", "en": ""},
                 {"filename": "a05v.mp3", "de": "sehr früh registriert habe", "en": ""},
-                {"filename": "a06v.mp3", "de": "wir es uns nicht leisten können", "en": ""},
                 {"filename": "a07v.mp3", "de": "sein kann", "en": ""},
-                {"filename": "a08v.mp3", "de": "eine grosse Freude bereitet", "en": ""},
 								{"filename": "a11v.mp3", "de": "mehrfach erlebt habe", "en": ""},
-                {"filename": "a12v.mp3", "de": "geholfen habe und gemerkt habe, wie wichtig dass ist", "en": ""},
+                {"filename": "a12v.mp3", "de": "geholfen habe", "en": ""},
 								{"filename": "a13v.mp3", "de": "zeigen möchte", "en": ""},
-                {"filename": "a15v.mp3", "de": "wir sie integrieren müssen", "en": ""},
+                {"filename": "a15v.mp3", "de": "integrieren müssen", "en": ""},
                 {"filename": "a18v.mp3", "de": "zu helfen", "en": ""},
-                {"filename": "a26v.mp3", "de": "im Umbruch ist", "en": ""}
+                {"filename": "a26v.mp3", "de": "im Umbruch ist", "en": ""},
+								{"filename": "a50v.mp3", "de": "glaube", "en": ""},
+								{"filename": "a51v.mp3", "de": "registriert habe", "en": ""},
+								{"filename": "a60v.mp3", "de": "im Umbruch ist", "en": ""},
+								{"filename": "a61v.mp3", "de": "nicht leisten können", "en": ""}
+
         ]
 }

@@ -10,8 +10,7 @@
 		{"filename": "b04full.mp3", "de": ".", "en": "Test."},
 		{"filename": "b05full.mp3", "de": ".", "en": "Test."},
 		{"filename": "b06full.mp3", "de": ".", "en": "Test."},
-                {"filename": "b07full.mp3", "de": ".", "en": "Test."},
-                {"filename": "b08full.mp3", "de": ".", "en": "Test."}
+                {"filename": "b07full.mp3", "de": ".", "en": "Test."}
 	],
 	"help": [
 		{"filename": "b01h.mp3", "de": "Ich helfe", "en": "I help"},
@@ -40,12 +39,15 @@
                 {"filename": "b07o.mp3", "de": "das Erfolgserlebnis", "en": ""},
                 {"filename": "b08o.mp3", "de": "Helferkreis", "en": ""},
                 {"filename": "b22o.mp3", "de": "besorgten Menschen", "en": ""},
-                {"filename": "b66o.mp3", "de": "meine Angst", "en": ""}             
+								{"filename": "b30o.mp3", "de": "eine Freude", "en": ""},
+								{"filename": "b60o.mp3", "de": "Deutschunterricht", "en": ""},
+                {"filename": "b66o.mp3", "de": "meine Angst", "en": ""},
+								{"filename": "b70o.mp3", "de": "Jobs", "en": ""}
 	],
 	"verb": [
 		{"filename": "b01v.mp3", "de": "leid tun", "en": ""},
 		{"filename": "b02v.mp3", "de": "sein will", "en": ""},
-		{"filename": "b03v.mp3", "de": "eine Freude gemacht wird", "en": ""},
+		{"filename": "b03v.mp3", "de": "gemacht wird", "en": ""},
 		{"filename": "b04v.mp3", "de": "interessieren", "en": ""},
                 {"filename": "b05v.mp3", "de": "interessiere", "en": ""},
                 {"filename": "b06v.mp3", "de": "geholfen habe", "en": ""},
@@ -53,6 +55,7 @@
                 {"filename": "b08v.mp3", "de": "auch sozial eingestellt sind", "en": ""},
                 {"filename": "b33v.mp3", "de": "freut", "en": ""},
                 {"filename": "b55v.mp3", "de": "mehr erfahren möchte", "en": ""},
+								{"filename": "b60v.mp3", "de": "abbauen konnte", "en": ""},
                 {"filename": "b77v.mp3", "de": "freuen kann", "en": ""},
                 {"filename": "b88v.mp3", "de": "kennenlernen wollte", "en": ""}
         ]
