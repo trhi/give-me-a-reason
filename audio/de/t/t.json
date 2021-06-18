@@ -38,17 +38,20 @@
                 {"filename": "t03o.mp3", "de": "das Gefühl", "en": ""},
                 {"filename": "t05o.mp3", "de": "etwas konkretes", "en": ""},
                 {"filename": "t06o.mp3", "de": "ein freundliches Gesicht", "en": ""},
-                {"filename": "t07o.mp3", "de": "möchte dass mir in so einer Situation", "en": ""},
+                {"filename": "t07o.mp3", "de": "so einer Situation", "en": ""},
                 {"filename": "t08o.mp3", "de": "Kontakt mit den Menschen", "en": ""}
 	],
 	"verb": [
 		{"filename": "t01v.mp3", "de": "lernen will", "en": ""},
                 {"filename": "t05v.mp3", "de": "tun will", "en": ""},
                 {"filename": "t06v.mp3", "de": "sein will", "en": ""},
+								{"filename": "t07v.mp3", "de": "möchte", "en": ""},
                 {"filename": "t08v.mp3", "de": "haben will", "en": ""},
                 {"filename": "t09v.mp3", "de": "geben", "en": ""},
                 {"filename": "t11v.mp3", "de": "anzukommen", "en": ""},
                 {"filename": "t10v.mp3", "de": "ohne jemanden zu kennen", "en": ""},
-                {"filename": "t12v.mp3", "de": "etwas geben", "en": ""}
+                {"filename": "t12v.mp3", "de": "etwas geben", "en": ""},
+								{"filename": "t71v.mp3", "de": "geholfen wird", "en": ""},
+
         ]
 }

@@ -5,8 +5,7 @@
 	"complete": {"filename": "u00complete.mp3","de": "Test. All sentences.", "en": "Test."},
 	"full": [
 		{"filename": "u01full.mp3", "de": ".", "en": "Test."},
-		{"filename": "u02full.mp3", "de": ".", "en": "Test."},
-		{"filename": "u03full.mp3", "de": ".", "en": "Test."},
+ 		{"filename": "u03full.mp3", "de": ".", "en": "Test."},
 		{"filename": "u04full.mp3", "de": ".", "en": "Test."},
 		{"filename": "u05full.mp3", "de": ".", "en": "Test."},
 		{"filename": "u06full.mp3", "de": ".", "en": "Test."},
@@ -30,7 +29,8 @@
         ],
 	"object": [
 		{"filename": "u01o.mp3", "de": "neue Erfahrungen", "en": ""},
-		{"filename": "u02o.mp3", "de": "die Herausforderung für Europa, Deutschland", "en": ""},
+		{"filename": "u20o.mp3", "de": "die Herausforderung", "en": ""},
+		{"filename": "u21o.mp3", "de": "Europa, Deutschland", "en": ""},
                 {"filename": "u03o.mp3", "de": "Zeit", "en": ""},
                 {"filename": "u04o.mp3", "de": "guten Erfahrungen", "en": ""},
                 {"filename": "u06o.mp3", "de": "von den Erfahrungen der Menschen", "en": ""},
@@ -40,7 +40,7 @@
 	"verb": [
 		{"filename": "u01v.mp3", "de": "machen wollte", "en": ""},
 		{"filename": "u02v.mp3", "de": "persönlich erfahren und gestalten wollte", "en": ""},
-		{"filename": "u03v.mp3", "de": "Zeit hatte", "en": ""},
+		{"filename": "u30v.mp3", "de": "hatte", "en": ""},
 		{"filename": "u04v.mp3", "de": "anknüpfen konnte und wollte", "en": ""},
                 {"filename": "u05v.mp3", "de": "erweitern wollte", "en": ""},
                 {"filename": "u06v.mp3", "de": "lernen wollte", "en": ""},
