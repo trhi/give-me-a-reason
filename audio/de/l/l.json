@@ -30,10 +30,10 @@
 		{"filename": "l04s.mp3", "de": "weil ich", "en": "because I"},
                 {"filename": "l06s.mp3", "de": "weil ich", "en": "because I"},
                 {"filename": "l07s.mp3", "de": "weil nicht alles", "en": "because not everything"},
-                {"filename": "l08s.mp3", "de": "weil ich mich selbst", "en": "because I/myself"},                
+                {"filename": "l08s.mp3", "de": "weil ich mich selbst", "en": "because I/myself"},
                 {"filename": "l14s.mp3", "de": "weil ich", "en": "because I"}
         ],
-	"object": [		
+	"object": [
 		{"filename": "l02o.mp3", "de": "ein lebendiger Vertreter meines Landes", "en": ""},
                 {"filename": "l03o.mp3", "de": "ein Brückenbauer", "en": ""},
                 {"filename": "l04o.mp3", "de": "die Gesellschaft", "en": ""},
@@ -41,19 +41,19 @@
                 {"filename": "l06o.mp3", "de": "von den Flüchtlingen", "en": ""},
                 {"filename": "l07o.mp3", "de": "vom Staat", "en": ""},
                 {"filename": "l08o.mp3", "de": "damit", "en": ""},
+								{"filename": "l10o.mp3", "de": "das Geschehen", "en": ""},
                 {"filename": "l12o.mp3", "de": "den Flüchtlingen", "en": ""},
                 {"filename": "l14o.mp3", "de": "ein Vorbild", "en": ""}
 	],
 	"verb": [
-		{"filename": "l01v.mp3", "de": "informiert über das Geschehen sein will", "en": ""},
 		{"filename": "l02v.mp3", "de": "sein will", "en": ""},
 		{"filename": "l03v.mp3", "de": "sein will", "en": ""},
 		{"filename": "l04v.mp3", "de": "sein will", "en": ""},
-                {"filename": "l05v.mp3", "de": "wie anders wir hier leben", "en": ""},
+                {"filename": "l05v.mp3", "de": "hier leben", "en": ""},
                 {"filename": "l06v.mp3", "de": "lernen will", "en": ""},
                 {"filename": "l07v.mp3", "de": "erledigt werden kann", "en": ""},
-                {"filename": "l08v.mp3", "de": "weiterentwickeln kann", "en": ""},               
-                {"filename": "l15v.mp3", "de": "zeigen will", "en": ""},
-                {"filename": "l16v.mp3", "de": "von den Flüchtlingen lernen will", "en": ""}
+                {"filename": "l08v.mp3", "de": "weiterentwickeln kann", "en": ""},
+								{"filename": "l10v.mp3", "de": "sein will", "en": ""},
+                {"filename": "l15v.mp3", "de": "zeigen will", "en": ""}
         ]
 }
