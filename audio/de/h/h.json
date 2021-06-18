@@ -23,25 +23,28 @@
 	"subject": [
 		{"filename": "h01s.mp3", "de": "weil ich", "en": "because I"},
 		{"filename": "h02s.mp3", "de": "weil die Menschen", "en": "because it"},
-		{"filename": "h03s.mp3", "de": "weil diese Flüchtlinge, die hier bleiben", "en": "because these migrants that are going to stay here"},
+		{"filename": "h03s.mp3", "de": "weil diese Flüchtlinge", "en": "because these refugees"},
 		{"filename": "h04s.mp3", "de": "weil ich den Flüchtlingen", "en": "because i want the refugees to"},
                 {"filename": "h06s.mp3", "de": "weil uns", "en": "because we/us"}
         ],
 	"object": [
 		{"filename": "h03o.mp3", "de": "unser Leben", "en": "our life"},
 		{"filename": "h04o.mp3", "de": "unsere Umgebung", "en": ""},
-		{"filename": "h30o.mp3", "de": "diese Flüchtlinge", "en": ""}
+		{"filename": "h30o.mp3", "de": "diese Flüchtlinge", "en": ""},
+		{"filename": "h50o.mp3", "de": "meine Mutti", "en": ""}
 
 	],
 	"verb": [
 		{"filename": "h01v.mp3", "de": "helfen will", "en": "want to help"},
 		{"filename": "h02v.mp3", "de": "hier nicht auskennen", "en": "don't know this place"},
 		{"filename": "h03v.mp3", "de": "kennen lernen sollen", "en": "should get to know"},
-		{"filename": "h04v.mp3", "de": "zeigen will damit sie sich auskennen", "en": "show them so they know"},
-                {"filename": "h05v.mp3", "de": "weiss wie schwer es für meine Mutti war", "en": "know how difficult it was for my mother"},
                 {"filename": "h06v.mp3", "de": "1945 geholfen hat", "en": "helped in '45"},
                 {"filename": "h07v.mp3", "de": "geholfen hat", "en": "helped"},
-								{"filename": "h30v.mp3", "de": "hier bleiben", "en": "stay here"}
+								{"filename": "h30v.mp3", "de": "hier bleiben", "en": "stay here"},
+								{"filename": "h41v.mp3", "de": "zeigen will", "en": "show them"},
+								{"filename": "h42v.mp3", "de": "sich auskennen", "en": ""},
+								{"filename": "h51v.mp3", "de": "weiss", "en": "know"},
+								{"filename": "h52v.mp3", "de": "war", "en": "know"}
 
         ]
 }
