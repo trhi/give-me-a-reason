@@ -9,7 +9,7 @@
     <!-- define character encoding: utf-8 -->
     <meta charset="utf-8">
    <!-- add metadata regarding keywords of project/site/button?
-   <meta name="keywords" content="refugees welcome, migrants, European union, Germany, altruism, volunteers, i help because, helping others, art">
+   <meta name="keywords" content="give me a reason, refugees welcome, migrants, European union, Germany, altruism, volunteers, i help because, helping others, art, electronic literature, e-poetry, terhi marttila">
     -->
     <!-- define: to cater to needs of IE9 and IE8
     and specify: google chrome frame should start if installed -->
@@ -45,13 +45,29 @@
                         button.attr('disabled', false);
                     });
             });
-            console.log("Button is now ready.");
+            //console.log("Button is now ready.");
         }
+
+        // welcome, reader of comments and code.
+
+        // An initial version of this code, by Terhi Marttila (May 2016),
+        // worked just fine yet was not elegant at all
+        // (implemented using XMLHhttpRequest... O__o etc).
+        // Major revamp to loading the data as well as playing the audio
+        // is the authorship of Tero Marttila (August 2016, Tenhola <3).
+
+        // lots of comments so that Terhi can remember why and what is happening
+        // throughout, commented out console.logs for debugging.
+
+        // Major overhaul of (and major improvement in) how audio was cut
+        // in 2021 prior to inclusion in the ELC4.
+
+        // enjoy. TNT. 2016 (&2021)
 
         // This function takes an array of deferreds, and returns an array of their results.
         //  $.when(d1, d2).then(function(o1, o2) { ... })
         //  whenList([d1, d2]).then(function(os) { var o1 = os[0], o2 = os[1]; ... })
-        //wrapper function
+        // wrapper function
         function whenList(deferreds) {
             return $.when.apply($, deferreds).then(function() {
                 //arguments is a magic word like this
@@ -66,55 +82,55 @@
             //arguments[0]
             var url = "audio/" + language + "/" + language + "-persons.json";
             var outerDeferred = $.get(url).then(function (data){
-                console.log("Got data:" , data.persons);
+                //console.log("Got data:" , data.persons);
                 var deferredList = [];
                 // $.each takes in a list and does function () {} for
                 // each element of that list. A neater way to do for-loops
                 // where function takes (i=index, person=value at index i
                 // in given list)
                 $.each(data.persons, function (i, person) {
-                    console.log("I eacherated this person: " + person.path);
+                    //console.log("I eacherated this person: " + person.path);
                     // .then() always needs to have a return value!
                     var deferred = $.get(person.path).then(function (data){
-                        console.log("I got all the data for " + person.name +
-                                ", and this is their data: " , data);
+                        //console.log("I got all the data for " + person.name +
+                        //        ", and this is their data: " , data);
                         return data;
                     });
-                    console.log("I have a deferred!!! It looks like this: " , deferred);
+                    //console.log("I have a deferred!!! It looks like this: " , deferred);
                     deferredList.push(deferred);
                 });
-                console.log("deferredList looks like this, however, it is going " +
-                        "to take a while longer til we can call each of our members" +
-                        "resolved! Oh, yes, the list: ", deferredList);
+                //console.log("deferredList looks like this, however, it is going " +
+                //        "to take a while longer til we can call each of our members" +
+                //        "resolved! Oh, yes, the list: ", deferredList);
                 var deferredOfDefferds = whenList(deferredList).then(function(persons){
 
-                    console.log("These are the persons: " , persons);
+                    //console.log("These are the persons: " , persons);
                     return persons;
 
                 });
 
-                console.log("I am going to wait for this deferred object that " +
-                    "represents a bunch of other deferred objects: " ,
-                    deferredOfDefferds);
+                //console.log("I am going to wait for this deferred object that " +
+                //    "represents a bunch of other deferred objects: " ,
+                //    deferredOfDefferds);
                 return deferredOfDefferds;
 
             });
 
-            console.log("Loading begun, please be patient, it's going to take " +
-                "a while until we scramble our way through all these Deferred Objects " +
-                "and until we are ready to call ourselves resolved as a whole through " +
-                "this seemingly endless chain of .then() dependencies/callbacks. " +
-                "Meanwhile, here be our outer deferred: " ,
-                outerDeferred);
+            //console.log("Loading begun, please be patient, it's going to take " +
+            //    "a while until we scramble our way through all these Deferred Objects " +
+            //    "and until we are ready to call ourselves resolved as a whole through " +
+            //    "this seemingly endless chain of .then() dependencies/callbacks. " +
+            //    "Meanwhile, here be our outer deferred: " ,
+            //    outerDeferred);
             return outerDeferred;
         }
 
         $(function() {
-            console.log( "ready!" );
+            //console.log( "ready!" );
             //state vs. configuration?
             loadData(language).then(function(persons){
-                console.log("LoadData() was kind enough to give us these values: " ,
-                    persons);
+                //console.log("LoadData() gave us this: " ,
+                //    persons);
                 buttonReady(function() {
                     return giveMeAReason(persons);
                 });
@@ -141,7 +157,7 @@
 
     //takes in a person and a segment type
     //selects a random segment of that type
-    //and then returns an obect with that segments'
+    //and then returns an object with that segments'
     //full path and text representation
     function makePlayablePerson(person, segmentType){
         var segment = selectRandom(person[segmentType]);
@@ -173,6 +189,7 @@
 
     function select(persons) {
         if (getRandomIndex(0,9) === 8) {
+            //sometimes it chooses to play a full sentence
             return selectFullSentence(persons);
         } else {
             return selectSegments(persons);
@@ -183,7 +200,7 @@
     //ie. [{src: "audio/de/a/a01h.mp3", text: "Ich helfe"}, {..}]
     //and returns a deferred once they have all been played
     function play(selections) {
-        console.log("We have these:" , selections);
+        //console.log("We have these:" , selections);
         var audioDiv = $("#audio");
         audioDiv.empty();
         var deferred = $.Deferred();
@@ -206,19 +223,19 @@
                 on: {
                     canplaythrough: function(event){
                         loading--;
-                        console.log("One more canplaythrough. Still waiting for:", loading);
+                        //console.log("One more canplaythrough. Still waiting for:", loading);
                         if(loading===0){
-                            console.log("Got tem loaded:", audios);
+                            //console.log("Got them loaded:", audios);
                             playNext();
                         }
                     },
                     ended: function(event){
                         playing++;
-                        console.log("I have played", audio);
+                        //console.log("I have played", audio);
                         if(playing<audios.length) {
                             playNext();
                         } else {
-                            console.log("I have played them all!");
+                            //console.log("I have played them all!");
                             deferred.resolve();
                         }
                     }
@@ -227,7 +244,7 @@
             audioDiv.append(audio);
             return audio[0];
         });
-        console.log("Waiting for preloads to canplaythrough")
+        //console.log("Waiting for preloads to canplaythrough")
         return deferred;
     }
 
