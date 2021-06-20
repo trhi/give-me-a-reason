@@ -60,7 +60,9 @@
                 {"filename": "i27v.mp3", "de": "spenden", "en": "donate"},
 								{"filename": "i70v.mp3", "de": "nicht so viel verdiene", "en": "do not earn so much"},
 								{"filename": "i71v.mp3", "de": "spenden kann", "en": ""},
-								{"filename": "i72v.mp3", "de": "verdiene", "en": ""}
+								{"filename": "i72v.mp3", "de": "verdiene", "en": ""},
+								{"filename": "i73v.mp3", "de": "viel verdiene", "en": "earn so much"},
+								{"filename": "i74v.mp3", "de": "so viel verdiene", "en": "earn so much"}
 
         ]
 }

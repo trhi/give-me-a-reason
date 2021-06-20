@@ -20,7 +20,6 @@
                 {"filename": "a08h.mp3", "de": "Ich helfe", "en": "I help "}
 	],
 	"subject": [
-		{"filename": "a01s.mp3", "de": "weil ich in der eigenen Familie", "en": ""},
 		{"filename": "a04s.mp3", "de": "weil ich gern selbst", "en": ""},
                 {"filename": "a05s.mp3", "de": "weil ich", "en": ""},
                 {"filename": "a07s.mp3", "de": "weil Multikulti", "en": ""}
@@ -34,6 +33,7 @@
 								{"filename": "a06o.mp3", "de": "nur die Rosinen", "en": ""},
                 {"filename": "a07o.mp3", "de": "eine grosse Bereicherung", "en": ""},
 								{"filename": "a08o.mp3", "de": "eine grosse Freude", "en": ""},
+								{"filename": "a11o.mp3", "de": "der eigenen Familie", "en": ""},
                 {"filename": "a12o.mp3", "de": "der Integration in Deutschland", "en": ""},
                 {"filename": "a15o.mp3", "de": "das Versagen der Politik", "en": ""},
                 {"filename": "a18o.mp3", "de": "anderen Menschen", "en": ""},

@@ -38,15 +38,15 @@
                 {"filename": "n07o.mp3", "de": "eine tolle Helfergruppe", "en": ""},
                 {"filename": "n08o.mp3", "de": "grosse Freude", "en": ""},
                 {"filename": "n33o.mp3", "de": "neugierig", "en": ""},
-                {"filename": "n88o.mp3", "de": "spass", "en": ""}
+                {"filename": "n88o.mp3", "de": "Spass", "en": ""}
 	],
 	"verb": [
 		{"filename": "n01v.mp3", "de": "mag", "en": ""},
 		{"filename": "n02v.mp3", "de": "auch geholfen wurde", "en": ""},
-		{"filename": "n03v.mp3", "de": "neugierig auf Menschen bin", "en": ""},
 		{"filename": "n04v.mp3", "de": "gut kann", "en": ""},
                 {"filename": "n05v.mp3", "de": "freundlich macht", "en": ""},
                 {"filename": "n06v.mp3", "de": "mag", "en": ""},
-                {"filename": "n08v.mp3", "de": "macht", "en": ""}
+                {"filename": "n08v.mp3", "de": "macht", "en": ""},
+								{"filename": "n31v.mp3", "de": "bin", "en": ""}
         ]
 }

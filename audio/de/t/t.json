@@ -34,8 +34,11 @@
                 {"filename": "t08s.mp3", "de": "weil ich", "en": ""}
         ],
 	"object": [
-		{"filename": "t01o.mp3", "de": "etwas", "en": ""},
+		{"filename": "t01o.mp3", "de": "Etwas", "en": ""},
                 {"filename": "t03o.mp3", "de": "das Gefühl", "en": ""},
+								{"filename": "t30o.mp3", "de": "den Menschen", "en": ""},
+								{"filename": "t40o.mp3", "de": "ohne jemanden", "en": ""},
+								{"filename": "t41o.mp3", "de": "eine neue Ort", "en": ""},
                 {"filename": "t05o.mp3", "de": "etwas konkretes", "en": ""},
                 {"filename": "t06o.mp3", "de": "ein freundliches Gesicht", "en": ""},
                 {"filename": "t07o.mp3", "de": "so einer Situation", "en": ""},
@@ -49,8 +52,9 @@
                 {"filename": "t08v.mp3", "de": "haben will", "en": ""},
                 {"filename": "t09v.mp3", "de": "geben", "en": ""},
                 {"filename": "t11v.mp3", "de": "anzukommen", "en": ""},
-                {"filename": "t10v.mp3", "de": "ohne jemanden zu kennen", "en": ""},
-                {"filename": "t12v.mp3", "de": "etwas geben", "en": ""},
+								{"filename": "t30v.mp3", "de": "geben", "en": ""},
+                {"filename": "t40v.mp3", "de": "zu kennen", "en": ""},
+								{"filename": "t41v.mp3", "de": "weiss", "en": ""},
 								{"filename": "t71v.mp3", "de": "geholfen wird", "en": ""}
 
         ]

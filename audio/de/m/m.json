@@ -39,6 +39,7 @@
                 {"filename": "m04o.mp3", "de": "natürlich", "en": ""},
                 {"filename": "m05o.mp3", "de": "der Mensch", "en": ""},
                 {"filename": "m06o.mp3", "de": "im Leben", "en": ""},
+								{"filename": "m61o.mp3", "de": "immer", "en": ""},
                 {"filename": "m08o.mp3", "de": "seine tiefen Herz", "en": ""},
 								{"filename": "m80o.mp3", "de": "Herz", "en": ""},
 								{"filename": "m51o.mp3", "de": "ein Lachen", "en": ""}
@@ -52,8 +53,8 @@
                 {"filename": "m06v.mp3", "de": "gut gehabt", "en": ""},
                 {"filename": "m07v.mp3", "de": "zu bleiben", "en": ""},
                 {"filename": "m08v.mp3", "de": "hilfbereit ist", "en": ""},
+								{"filename": "m11v.mp3", "de": "liebe", "en": ""},
                 {"filename": "m33v.mp3", "de": "wartet darauf", "en": ""},
-                {"filename": "m66v.mp3", "de": "immer gut gehabt", "en": ""},
                 {"filename": "m77v.mp3", "de": "wird geholfen", "en": ""},
                 {"filename": "m88v.mp3", "de": "ist gut", "en": ""}
         ]

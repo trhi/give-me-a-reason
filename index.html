@@ -5,23 +5,23 @@
 
 <html lang="en-us">
   <head>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">    
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <!-- define character encoding: utf-8 -->
-    <meta charset="utf-8">    
+    <meta charset="utf-8">
    <!-- add metadata regarding keywords of project/site/button?
-   <meta name="keywords" content="refugees welcome, migrants, European union, Germany, altruism, volunteers, i help because, helping others, art"> 
-    -->      
-    <!-- define: to cater to needs of IE9 and IE8 
+   <meta name="keywords" content="refugees welcome, migrants, European union, Germany, altruism, volunteers, i help because, helping others, art">
+    -->
+    <!-- define: to cater to needs of IE9 and IE8
     and specify: google chrome frame should start if installed -->
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <!-- define responsive design: w3.css -->
     <link rel="stylesheet" href="stylesheets/styles.css">
     <meta name="viewport" content="width=device-width">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.js"></script>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.js"></script>
     <title>Give Me a Reason</title>
   </head>
-  <body>                           
-    <div id="audio"></div>   
+  <body>
+    <div id="audio"></div>
     <div id="google_translate_element"></div>
     <script type="text/javascript">
         function googleTranslateElementInit() {
@@ -34,9 +34,9 @@
     </form>
     <div id="sentences"></div>
     <!-- cope with screen rotations and scaling-->
-    <script src="javascripts/scale.fix.js"></script>   
-    <script>        
-        var language = "de";              
+    <script src="javascripts/scale.fix.js"></script>
+    <script>
+        var language = "de";
         //to show give me a reason once the voices have loaded
         function buttonReady(onclick){
             var button = $("#givemeareasonbutton").removeClass("loading").prop('disabled', false).on("click", function () {
@@ -47,10 +47,10 @@
             });
             console.log("Button is now ready.");
         }
-          
+
         // This function takes an array of deferreds, and returns an array of their results.
         //  $.when(d1, d2).then(function(o1, o2) { ... })
-        //  whenList([d1, d2]).then(function(os) { var o1 = os[0], o2 = os[1]; ... }) 
+        //  whenList([d1, d2]).then(function(os) { var o1 = os[0], o2 = os[1]; ... })
         //wrapper function
         function whenList(deferreds) {
             return $.when.apply($, deferreds).then(function() {
@@ -59,71 +59,71 @@
                 return arguments;
             });
         }
-        
+
         //This function loads .json data for the given language and returns a deferred
         //resolving to an array of person objects
-        function loadData(language){       
+        function loadData(language){
             //arguments[0]
-            var url = "audio/" + language + "/" + language + "-persons.json"; 
+            var url = "audio/" + language + "/" + language + "-persons.json";
             var outerDeferred = $.get(url).then(function (data){
                 console.log("Got data:" , data.persons);
-                var deferredList = []; 
-                // $.each takes in a list and does function () {} for 
+                var deferredList = [];
+                // $.each takes in a list and does function () {} for
                 // each element of that list. A neater way to do for-loops
-                // where function takes (i=index, person=value at index i 
+                // where function takes (i=index, person=value at index i
                 // in given list)
-                $.each(data.persons, function (i, person) {              
-                    console.log("I eacherated this person: " + person.path);                   
+                $.each(data.persons, function (i, person) {
+                    console.log("I eacherated this person: " + person.path);
                     // .then() always needs to have a return value!
                     var deferred = $.get(person.path).then(function (data){
-                        console.log("I got all the data for " + person.name + 
+                        console.log("I got all the data for " + person.name +
                                 ", and this is their data: " , data);
-                        return data;                        
+                        return data;
                     });
-                    console.log("I have a deferred!!! It looks like this: " , deferred);                  
-                    deferredList.push(deferred);                
+                    console.log("I have a deferred!!! It looks like this: " , deferred);
+                    deferredList.push(deferred);
                 });
                 console.log("deferredList looks like this, however, it is going " +
                         "to take a while longer til we can call each of our members" +
-                        "resolved! Oh, yes, the list: ", deferredList);             
+                        "resolved! Oh, yes, the list: ", deferredList);
                 var deferredOfDefferds = whenList(deferredList).then(function(persons){
-                    
+
                     console.log("These are the persons: " , persons);
                     return persons;
 
                 });
-                
+
                 console.log("I am going to wait for this deferred object that " +
-                    "represents a bunch of other deferred objects: " , 
+                    "represents a bunch of other deferred objects: " ,
                     deferredOfDefferds);
                 return deferredOfDefferds;
-             
+
             });
-            
+
             console.log("Loading begun, please be patient, it's going to take " +
                 "a while until we scramble our way through all these Deferred Objects " +
                 "and until we are ready to call ourselves resolved as a whole through " +
-                "this seemingly endless chain of .then() dependencies/callbacks. " + 
-                "Meanwhile, here be our outer deferred: " , 
+                "this seemingly endless chain of .then() dependencies/callbacks. " +
+                "Meanwhile, here be our outer deferred: " ,
                 outerDeferred);
-            return outerDeferred;            
+            return outerDeferred;
         }
 
-        $(function() {            
-            console.log( "ready!" );                      
+        $(function() {
+            console.log( "ready!" );
             //state vs. configuration?
-            loadData(language).then(function(persons){                   
-                console.log("LoadData() was kind enough to give us these values: " ,  
-                    persons);                               
+            loadData(language).then(function(persons){
+                console.log("LoadData() was kind enough to give us these values: " ,
+                    persons);
                 buttonReady(function() {
                     return giveMeAReason(persons);
-                });               
-            }, 
+                });
+            },
             function(error){
-                console.log("Oy! I found a rare species of the Er-er bird:" , error);    
-            }); 
-        });         
-   
+                console.log("Oy! I found a rare species of the Er-er bird:" , error);
+            });
+        });
+
     // Returns a random integer between min (included) and max (excluded)
     // Using Math.round() will give you a non-uniform distribution!
     //pass zero as min and pass array.length as max
@@ -133,14 +133,14 @@
     function getRandomIndex(min, max) {
          return Math.floor(Math.random() * (max - min)) + min;
     }
-        
+
     //return random element from array
     function selectRandom(array){
         return array[getRandomIndex(0, array.length)];
     }
 
     //takes in a person and a segment type
-    //selects a random segment of that type 
+    //selects a random segment of that type
     //and then returns an obect with that segments'
     //full path and text representation
     function makePlayablePerson(person, segmentType){
@@ -164,8 +164,8 @@
     //the play function (full path and text)
     function selectSegments(persons){
         return [
-            makePlayablePerson(selectRandom(persons), "help"), 
-            makePlayablePerson(selectRandom(persons), "subject"), 
+            makePlayablePerson(selectRandom(persons), "help"),
+            makePlayablePerson(selectRandom(persons), "subject"),
             makePlayablePerson(selectRandom(persons), "object"),
             makePlayablePerson(selectRandom(persons), "verb")
         ];
@@ -193,7 +193,7 @@
         $("#sentences").prepend(sentence);
 
         function playNext(){
-            audios[playing].play();        
+            audios[playing].play();
             sentence.append(selections[playing].text).append(" ");
         }
 
@@ -235,7 +235,7 @@
         var selections = select(persons);
         return play(selections);
     }
-    
-    </script>   
+
+    </script>
   </body>
 </html>

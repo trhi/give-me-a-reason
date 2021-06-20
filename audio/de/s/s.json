@@ -29,17 +29,20 @@
 		{"filename": "s01s.mp3", "de": "weil helfen", "en": ""},
 		{"filename": "s02s.mp3", "de": "weil helfen", "en": ""},
 		{"filename": "s03s.mp3", "de": "weil ich", "en": ""},
-		{"filename": "s04s.mp3", "de": "weil Geben und Nehmen", "en": ""},
                 {"filename": "s05s.mp3", "de": "weil es", "en": ""},
                 {"filename": "s06s.mp3", "de": "weil es", "en": ""},
                 {"filename": "s08s.mp3", "de": "weil gegenseitige Hilfe", "en": ""}
         ],
 	"object": [
-		{"filename": "s01o.mp3", "de": "zu meinem Wesen", "en": ""},
-		{"filename": "s02o.mp3", "de": "zu meinem Leben", "en": ""},
+		{"filename": "s10o.mp3", "de": "meinem Wesen", "en": ""},
+		{"filename": "s20o.mp3", "de": "meinem Leben", "en": ""},
+		{"filename": "s40o.mp3", "de": "Geben und Nehmen", "en": ""},
                 {"filename": "s05o.mp3", "de": "Sinn", "en": ""},
                 {"filename": "s07o.mp3", "de": "meine eigene Sichtweise", "en": ""},
-                {"filename": "s08o.mp3", "de": "die Basis der menschlichen Existenz", "en": ""}
+                {"filename": "s08o.mp3", "de": "die Basis der menschlichen Existenz", "en": ""},
+								{"filename": "s81o.mp3", "de": "der menschlichen Existenz", "en": ""},
+								{"filename": "s82o.mp3", "de": "die Basis", "en": ""},
+								{"filename": "s83o.mp3", "de": "gegenseitige Hilfe", "en": ""}
 	],
 	"verb": [
 		{"filename": "s01v.mp3", "de": "gehört", "en": ""},
