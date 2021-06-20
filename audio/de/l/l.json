@@ -37,13 +37,15 @@
 		{"filename": "l02o.mp3", "de": "ein lebendiger Vertreter meines Landes", "en": ""},
                 {"filename": "l03o.mp3", "de": "ein Brückenbauer", "en": ""},
                 {"filename": "l04o.mp3", "de": "die Gesellschaft", "en": ""},
-                {"filename": "l05o.mp3", "de": "wie anders wir hier", "en": ""},
                 {"filename": "l06o.mp3", "de": "von den Flüchtlingen", "en": ""},
                 {"filename": "l07o.mp3", "de": "vom Staat", "en": ""},
                 {"filename": "l08o.mp3", "de": "damit", "en": ""},
 								{"filename": "l10o.mp3", "de": "das Geschehen", "en": ""},
                 {"filename": "l12o.mp3", "de": "den Flüchtlingen", "en": ""},
-                {"filename": "l14o.mp3", "de": "ein Vorbild", "en": ""}
+                {"filename": "l14o.mp3", "de": "ein Vorbild", "en": ""},
+								{"filename": "l51o.mp3", "de": "anders", "en": ""},
+								{"filename": "l52o.mp3", "de": "wir", "en": ""},
+								{"filename": "l53o.mp3", "de": "hier", "en": ""}
 	],
 	"verb": [
 		{"filename": "l02v.mp3", "de": "sein will", "en": ""},

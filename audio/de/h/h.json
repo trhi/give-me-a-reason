@@ -38,7 +38,7 @@
 	"verb": [
 		{"filename": "h01v.mp3", "de": "helfen will", "en": "want to help"},
 		{"filename": "h02v.mp3", "de": "nicht auskennen", "en": "don't know this place"},
-		{"filename": "h03v.mp3", "de": "kennen lernen sollen", "en": "should get to know"},
+		{"filename": "h03v.mp3", "de": "kennenlernen sollen", "en": "should get to know"},
                 {"filename": "h06v.mp3", "de": "1945 geholfen hat", "en": "helped in '45"},
                 {"filename": "h07v.mp3", "de": "geholfen hat", "en": "helped"},
 								{"filename": "h30v.mp3", "de": "hier bleiben", "en": "stay here"},

@@ -39,7 +39,8 @@
                 {"filename": "g04o.mp3", "de": "jemand in der Not", "en": "somebody in need"},
                 {"filename": "g06o.mp3", "de": "mein Denken", "en": "my thinking"},
                 {"filename": "g07o.mp3", "de": "lieber unter Menschen", "en": "preferably amongst people"},
-								{"filename": "g20o.mp3", "de": "die Bedürfnisse andere", "en": "the needs of others"}
+								{"filename": "g20o.mp3", "de": "die Bedürfnisse andere", "en": "the needs of others"},
+								{"filename": "g50o.mp3", "de": "hilflos", "en": "the needs of others"}
 
 	],
 	"verb": [
